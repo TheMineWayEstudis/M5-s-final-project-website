@@ -15,6 +15,10 @@ export default class Route {
         return new Route(['/',''].includes(path) ? ['/'] : path.split('/').map(this.processRoute));
     }
 
+    static getCurrent(): Route {
+        return Route.fromPath(window.location.pathname);
+    }
+
     static processRoute(route: string): string {
         return route.toLowerCase();
     }

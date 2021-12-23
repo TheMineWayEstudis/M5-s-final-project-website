@@ -26,5 +26,5 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/'),
         component: <></>
-    }
+    },
 ];
