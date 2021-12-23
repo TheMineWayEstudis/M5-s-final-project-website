@@ -1,7 +1,7 @@
 import { Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
-import Route from '../../../routes/Route';
+import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
 
 export default function BaseHeader() {
     return (
@@ -17,12 +17,12 @@ export default function BaseHeader() {
 }
 
 class Header {
-    route?: Route;
+    route?: IRoute;
     name: string;
     children?: Header[];
     icon?: JSX.Element;
 
-    constructor(props: { route?: Route, name: string, children?: Header[], icon?: JSX.Element }) {
+    constructor(props: { route?: IRoute, name: string, children?: Header[], icon?: JSX.Element }) {
         this.route = props.route;
         this.name = props.name;
         this.children = props.children;
@@ -41,16 +41,37 @@ class Header {
         );
     }
 
-    render(): JSX.Element {
-        if (this.children) {
-            if (this.route) return (<Link to={this.route.getPath()}>{this.submenu()}</Link>);
-            return this.submenu();
+    link(child: JSX.Element, route?: IRoute): JSX.Element {
+        if(route) {
+            if(route.isExternal()) return (<a href={route.getPath()} target={(route as ExternalRoute).newTab ? "_blank" : "_self"}>{child}</a>);
+            return (<Link to={route.getPath()}>{child}</Link>);
         }
-        if (this.route) return <Link to={this.route.getPath()}>{this.item()}</Link>
-        return this.item();
+        return child;
+    }
+
+    render(): JSX.Element {
+        if (this.children) return this.link(this.submenu(), this.route);
+        return this.link(this.item(), this.route);
     }
 }
 
 const headers: Header[] = [
-
+    // Main screen header
+    new Header({
+        route: Route.fromPath('/'),
+        name: 'Main screen',
+    }),
+    new Header({
+        name: 'Computer',
+        children: [
+            new Header({
+                route: new ExternalRoute("https://www.google.com"),
+                name: 'Google',
+            }),
+            new Header({
+                route: Route.fromPath('/computer'),
+                name: 'Subcomputer',
+            }),
+        ],
+    }),
 ];

@@ -4,7 +4,7 @@ import {
     BrowserRouter,
 } from "react-router-dom";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
-import Route from "./Route";
+import { Route } from "./Route";
 
 export default function Routes() {
     return (

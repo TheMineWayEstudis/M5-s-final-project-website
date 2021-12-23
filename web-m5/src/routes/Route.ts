@@ -1,4 +1,6 @@
-export default class Route {
+import path from "path/posix";
+
+export class Route implements IRoute {
     path: string[];
 
     public constructor(path: string[]) {
@@ -8,6 +10,10 @@ export default class Route {
     /* METHODS */
     getPath(): string {
         return this.path.join("/");
+    }
+
+    isExternal(): boolean {
+        return false;
     }
 
     /* STATIC */
@@ -22,4 +28,27 @@ export default class Route {
     static processRoute(route: string): string {
         return route.toLowerCase();
     }
+}
+
+export class ExternalRoute implements IRoute {
+    path: string;
+    newTab: boolean;
+
+    constructor(path: string, newTab: boolean = true) {
+        this.path = path;
+        this.newTab = newTab;
+    }
+
+    getPath(): string {
+        return this.path;
+    }
+    
+    isExternal(): boolean {
+        return true;
+    }
+}
+
+export default interface IRoute {
+    getPath(): string;
+    isExternal(): boolean;
 }
