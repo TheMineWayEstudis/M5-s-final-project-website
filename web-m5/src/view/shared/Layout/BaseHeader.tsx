@@ -2,6 +2,7 @@ import { Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
 import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
+import { GithubOutlined } from '@ant-design/icons';
 
 export default function BaseHeader() {
     return (
@@ -30,7 +31,7 @@ class Header {
     }
 
     private item(): JSX.Element {
-        return (<Menu.Item key={this.route?.getPath() || null}>{this.name}</Menu.Item>);
+        return (<Menu.Item key={this.route?.getPath() || null} icon={this.icon}>{this.name}</Menu.Item>);
     }
 
     private submenu(): JSX.Element {
@@ -67,6 +68,7 @@ const headers: Header[] = [
             new Header({
                 route: new ExternalRoute("https://www.google.com"),
                 name: 'Google',
+                icon: <GithubOutlined />
             }),
             new Header({
                 route: Route.fromPath('/computer'),
