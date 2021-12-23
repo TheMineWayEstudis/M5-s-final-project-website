@@ -1,9 +1,10 @@
 import './App.css';
+import BaseLayout from './view/shared/Layout/BaseLayout';
 
-function App() {
+export default function App() {
   return (
-    <></>
+    <BaseLayout>
+      <></>
+    </BaseLayout>
   );
 }
-
-export default App;
