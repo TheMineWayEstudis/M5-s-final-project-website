@@ -56,6 +56,7 @@ class Header {
     }
 }
 
+// Menu items
 const headers: Header[] = [
     // Main screen header
     new Header({
@@ -63,17 +64,8 @@ const headers: Header[] = [
         name: 'Main screen',
     }),
     new Header({
-        name: 'Computer',
-        children: [
-            new Header({
-                route: new ExternalRoute("https://www.google.com"),
-                name: 'Google',
-                icon: <GithubOutlined />
-            }),
-            new Header({
-                route: Route.fromPath('/computer'),
-                name: 'Subcomputer',
-            }),
-        ],
+        name: 'GitHub project',
+        route: new ExternalRoute("https://github.com/TheMineWayEstudis/M5-s-final-project-website"),
+        icon: <GithubOutlined/>
     }),
 ];
