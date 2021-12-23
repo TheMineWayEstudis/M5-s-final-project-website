@@ -10,7 +10,6 @@ export default function BaseLayout(props: { children: JSX.Element[] | JSX.Elemen
         <Layout className="layout">
             <BaseHeader/>
             <Content style={{ padding: '0 50px' }}>
-                <NavigatorBreadcrumb/>
                 <div className="site-layout-content">
                     {props.children}
                 </div>
