@@ -29,11 +29,11 @@ class Header {
         this.icon = props.icon;
     }
 
-    item(): JSX.Element {
+    private item(): JSX.Element {
         return (<Menu.Item key={this.route?.getPath() || null}>{this.name}</Menu.Item>);
     }
 
-    submenu(): JSX.Element {
+    private submenu(): JSX.Element {
         return (
             <Menu.SubMenu title={this.name}>
                 {this.children!.map((child: Header) => child.render())}
@@ -41,7 +41,7 @@ class Header {
         );
     }
 
-    link(child: JSX.Element, route?: IRoute): JSX.Element {
+    private link(child: JSX.Element, route?: IRoute): JSX.Element {
         if(route) {
             if(route.isExternal()) return (<a href={route.getPath()} target={(route as ExternalRoute).newTab ? "_blank" : "_self"}>{child}</a>);
             return (<Link to={route.getPath()}>{child}</Link>);
