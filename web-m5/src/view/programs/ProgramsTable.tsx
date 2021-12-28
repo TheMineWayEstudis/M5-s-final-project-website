@@ -1,5 +1,5 @@
 import { CheckCircleOutlined, CheckOutlined, CloseOutlined } from '@ant-design/icons';
-import { Table } from 'antd';
+import { Table, Tooltip } from 'antd';
 import { ColumnsType } from 'antd/lib/table';
 
 export default function ProgramsTable() {
@@ -61,7 +61,15 @@ export default function ProgramsTable() {
             children: [
                 {
                     title: 'Program',
-                    render: (row: Program) => <div style={{ textAlign: 'center' }}><img width={iconsSize} src={row.icon} /></div>,
+                    render: (row: Program) => (
+                        <div style={{ textAlign: 'center' }}>
+                            <Tooltip
+                                title={row.name}
+                            >
+                                <img alt={row.name} width={iconsSize} src={row.icon}/>
+                            </Tooltip>
+                        </div>
+                    ),
                     filters: [
                         {
                             text: 'Gaming',
@@ -128,6 +136,40 @@ export default function ProgramsTable() {
             memory: true,
             graphics: true,
             fastCPU: true,
+        },
+        {
+            icon: require('./resources/vmware.png'),
+            name: 'VMWare',
+            purpose: 'studying',
+            memory: true,
+            massiveStorage: true,
+            fastCPU: true,
+            CPUCores: true,
+        },
+        {
+            icon: require('./resources/node.png'),
+            name: 'Node.js',
+            purpose: 'developing',
+            memory: true,
+        },
+        {
+            icon: require('./resources/assassins_creed.png'),
+            name: 'Assassins Creed',
+            purpose: 'gaming',
+            memory: true,
+            graphics: true,
+            fastStorage: true,
+            fastCPU: true,
+            refrigeration: true,
+        },
+        {
+            icon: require('./resources/minecraft.png'),
+            name: 'Minecraft',
+            purpose: 'gaming',
+            memory: true,
+            graphics: true,
+            fastCPU: true,
+            fastStorage: true,
         }
     ];
 
