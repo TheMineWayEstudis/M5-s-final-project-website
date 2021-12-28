@@ -179,6 +179,7 @@ export default function ProgramsTable() {
             style={{ width: '100%' }}
             columns={columns}
             dataSource={data}
+            sticky
         >
 
         </Table>
