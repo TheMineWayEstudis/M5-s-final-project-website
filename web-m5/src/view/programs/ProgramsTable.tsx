@@ -21,7 +21,7 @@ export default function ProgramsTable() {
     type ProgramHeader = {
         name: string,
         value: string,
-    }
+    };
 
     const headers: ProgramHeader[] = [
         {
@@ -82,7 +82,7 @@ export default function ProgramsTable() {
             {
                 title: header.name,
                 dataIndex: header.value,
-                render: (value: boolean) => <div style={{textAlign: 'center'}}>{value ? <CheckOutlined style={{color: 'green'}} width={iconsSize}/> : <CloseOutlined style={{color: 'red'}} width={iconsSize}/>}</div>,
+                render: (value: boolean) => <div style={{textAlign: 'center'}}>{value ? <CheckOutlined style={{color: 'green'}} size={iconsSize}/> : <CloseOutlined style={{color: 'red'}} size={iconsSize}/>}</div>,
                 onFilter: (value: string | number | boolean, record: Program) => (record as any)[header.value] || false === value,
                 filters: [
                     {
@@ -99,11 +99,11 @@ export default function ProgramsTable() {
     ];
     const data: Program[] = [
         {
-            icon: 'https://jonmircha.com/img/blog/vscode.png',
+            icon: require('./resources/vscode.png'),
             purpose: 'developing',
         },
         {
-            icon: 'https://2.bp.blogspot.com/-tzm1twY_ENM/XlCRuI0ZkRI/AAAAAAAAOso/BmNOUANXWxwc5vwslNw3WpjrDlgs9PuwQCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png',
+            icon: require('./resources/android_studio.png'),
             purpose: 'developing',
             memory: true,
             massiveStorage: true,
@@ -113,6 +113,7 @@ export default function ProgramsTable() {
 
     return (
         <Table
+            scroll={{ x: 1000 }}
             style={{width: '100%'}}
             columns={columns}
             dataSource={data}
