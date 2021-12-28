@@ -1,9 +1,9 @@
-import React from 'react'
+import SectionTitle from '../shared/components/SectionTitle';
 
 export default function ComputerUsage() {
     return (
-        <div>
-            
-        </div>
+        <>
+            <SectionTitle>About the computer usage</SectionTitle>
+        </>
     );
 }
