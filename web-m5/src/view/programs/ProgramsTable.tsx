@@ -56,47 +56,53 @@ export default function ProgramsTable() {
 
     const columns: ColumnsType<Program> = [
         {
-            title: 'Program',
-            render: (row: Program) => <div style={{textAlign: 'center'}}><img width={iconsSize} src={row.icon}/></div>,
-            filters: [
+            title: 'Computer requirements by software',
+            children: [
                 {
-                    text: 'Gaming',
-                    value: 'gaming',
+                    title: 'Program',
+                    render: (row: Program) => <div style={{ textAlign: 'center' }}><img width={iconsSize} src={row.icon} /></div>,
+                    filters: [
+                        {
+                            text: 'Gaming',
+                            value: 'gaming',
+                        },
+                        {
+                            text: 'Developing',
+                            value: 'developing',
+                        },
+                        {
+                            text: 'Studying',
+                            value: 'studying',
+                        },
+                        {
+                            text: 'Other',
+                            value: 'other',
+                        },
+                    ],
+                    onFilter: (value: string | number | boolean, record: Program) => record.purpose === value,
                 },
-                {
-                    text: 'Developing',
-                    value: 'developing',
-                },
-                {
-                    text: 'Studying',
-                    value: 'studying',
-                },
-                {
-                    text: 'Other',
-                    value: 'other',
-                },
-            ],
-            onFilter: (value: string | number | boolean, record: Program) => record.purpose === value,
-        },
-        ...headers.map((header: ProgramHeader) => (
-            {
-                title: header.name,
-                dataIndex: header.value,
-                render: (value: boolean) => <div style={{textAlign: 'center'}}>{value ? <CheckOutlined style={{color: 'green'}} size={iconsSize}/> : <CloseOutlined style={{color: 'red'}} size={iconsSize}/>}</div>,
-                onFilter: (value: string | number | boolean, record: Program) => (record as any)[header.value] || false === value,
-                filters: [
+                ...headers.map((header: ProgramHeader) => (
                     {
-                        text: 'Required',
-                        value: true,
-                    },
-                    {
-                        text: 'Not required',
-                        value: false,
-                    },
-                ],
-            }
-        )),
+                        title: header.name,
+                        dataIndex: header.value,
+                        render: (value: boolean) => <div style={{ textAlign: 'center' }}>{value ? <CheckOutlined style={{ color: 'green' }} size={iconsSize} /> : <CloseOutlined style={{ color: 'red' }} size={iconsSize} />}</div>,
+                        onFilter: (value: string | number | boolean, record: Program) => (record as any)[header.value] || false === value,
+                        filters: [
+                            {
+                                text: 'Required',
+                                value: true,
+                            },
+                            {
+                                text: 'Not required',
+                                value: false,
+                            },
+                        ],
+                    }
+                )),
+            ]
+        }
     ];
+
     const data: Program[] = [
         {
             icon: require('./resources/vscode.png'),
@@ -108,13 +114,20 @@ export default function ProgramsTable() {
             memory: true,
             massiveStorage: true,
             CPUCores: true,
+        },
+        {
+            icon: require('./resources/unity.png'),
+            purpose: 'developing',
+            memory: true,
+            graphics: true,
+            fastCPU: true,
         }
     ];
 
     return (
         <Table
             scroll={{ x: 1000 }}
-            style={{width: '100%'}}
+            style={{ width: '100%' }}
             columns={columns}
             dataSource={data}
         >
