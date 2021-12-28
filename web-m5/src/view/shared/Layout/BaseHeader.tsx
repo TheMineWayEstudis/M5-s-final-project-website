@@ -61,7 +61,7 @@ const headers: Header[] = [
     // Main screen header
     new Header({
         route: Route.fromPath('/'),
-        name: 'Main screen',
+        name: 'About the project',
     }),
     new Header({
         name: 'GitHub project',
