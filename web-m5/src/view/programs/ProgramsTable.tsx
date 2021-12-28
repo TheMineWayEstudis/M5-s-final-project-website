@@ -8,6 +8,7 @@ export default function ProgramsTable() {
     type ProgramProps = boolean;
     type Program = {
         icon: string,
+        name: string,
         purpose: 'gaming' | 'developing' | 'studying' | 'other',
         graphics?: ProgramProps,
         memory?: ProgramProps,
@@ -80,6 +81,8 @@ export default function ProgramsTable() {
                         },
                     ],
                     onFilter: (value: string | number | boolean, record: Program) => record.purpose === value,
+                    sorter: (a: Program, b: Program) => a.name.localeCompare(b.name),
+                    defaultSortOrder: 'ascend',
                 },
                 ...headers.map((header: ProgramHeader) => (
                     {
@@ -97,6 +100,7 @@ export default function ProgramsTable() {
                                 value: false,
                             },
                         ],
+                        sorter: (a: any, b: any) => (a[header.value] ? 1 : -1) - (b[header.value] ? 1 : -1),
                     }
                 )),
             ]
@@ -106,10 +110,12 @@ export default function ProgramsTable() {
     const data: Program[] = [
         {
             icon: require('./resources/vscode.png'),
+            name: 'VSCode',
             purpose: 'developing',
         },
         {
             icon: require('./resources/android_studio.png'),
+            name: 'Android Studio',
             purpose: 'developing',
             memory: true,
             massiveStorage: true,
@@ -117,6 +123,7 @@ export default function ProgramsTable() {
         },
         {
             icon: require('./resources/unity.png'),
+            name: 'Unity',
             purpose: 'developing',
             memory: true,
             graphics: true,
