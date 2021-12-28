@@ -21,7 +21,7 @@ export default function ComputerUsage() {
                         </p>
                     </Card>
                 </Col>
-                <Col lg={14} sm={24}>
+                <Col lg={14} sm={24} style={{width: '100%'}}>
                     <ProgramsTable/>
                 </Col>
             </Row>
