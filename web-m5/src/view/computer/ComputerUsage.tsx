@@ -8,16 +8,18 @@ export default function ComputerUsage() {
             <SectionTitle>About the computer usage</SectionTitle>
             <br/>
             <Row gutter={[24,24]}>
-                <Col lg={10} sm={24} style={{display: 'flex'}}>
+                <Col lg={10} sm={24}>
                     <Card
                         style={{width: '100%'}}
                     >
                         <h2
                             style={{fontWeight: 'bold'}}
-                        >What is the aim of the computer?</h2>
+                        >
+                            What is the aim of the computer?
+                        </h2>
 
                         <p style={{textAlign: 'justify'}}>
-                            Before I start designing the computer I have to think about what am I going to use the computer for. As a result it shows up I'm currently using my computer to play videogames, study (IT) and develop solutions for personal projects.
+                            Before I start designing the computer I have to think about what am I going to use the computer for. As a result it shows up I'm currently using my computer to play videogames, study (IT) and develop solutions for my personal projects. In order to have a visual display of the main usage of the computer I created a table that contains some of my most used programs and games. Every row represents a program (identified by its icon) containing a tick on those rows that represent a computer resource that is almost crucial for its proper execution.
                         </p>
                     </Card>
                 </Col>
