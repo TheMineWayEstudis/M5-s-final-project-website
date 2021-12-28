@@ -5,8 +5,6 @@ import MainScreenHeader from './MainScreenHeader';
 export default function MainScreen() {
     return (
         <>
-            <MainScreenCarousel/>
-            <br/>
             <MainScreenHeader/>
             <br/>
             <MainScreenBodyItems/>
