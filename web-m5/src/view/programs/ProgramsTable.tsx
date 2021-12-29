@@ -218,6 +218,10 @@ export default function ProgramsTable() {
             columns={columns}
             dataSource={data}
             sticky
+            pagination={{
+                pageSize: 6,
+                position: [ 'bottomRight' ],
+            }}
         >
 
         </Table>
