@@ -47,7 +47,7 @@ class Header {
             if(route.isExternal()) return (<a href={route.getPath()} target={(route as ExternalRoute).newTab ? "_blank" : "_self"}>{child}</a>);
             return (<Link to={route.getPath()}>{child}</Link>);
         }
-        return child;
+        return <div>{child}</div>;
     }
 
     render(): JSX.Element {
@@ -66,6 +66,15 @@ const headers: Header[] = [
     new Header({
         name: 'User needs',
         route: Route.fromPath('/needs'),
+    }),
+    new Header({
+        name: 'Computer',
+        children: [
+            new Header({
+                name: 'Market study',
+                route: Route.fromPath('/computer/market-study'),
+            }),
+        ],
     }),
     new Header({
         name: 'GitHub project',
