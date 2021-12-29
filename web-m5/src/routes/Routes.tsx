@@ -30,7 +30,7 @@ const routes: { route: Route, component: JSX.Element }[] = [
         component: <MainScreen/>,
     },
     {
-        route: Route.fromPath('/the-computer'),
+        route: Route.fromPath('/needs'),
         component: <ComputerUsage/>,
     },
 ];

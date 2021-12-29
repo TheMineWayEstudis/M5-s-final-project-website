@@ -6,7 +6,7 @@ import SectionTitle from '../shared/components/SectionTitle';
 export default function ComputerUsage() {
     return (
         <>
-            <SectionTitle>About the computer usage</SectionTitle>
+            <SectionTitle>About the user needs</SectionTitle>
             <br />
             <Row gutter={[24, 24]}>
                 <Col lg={10} sm={24}>

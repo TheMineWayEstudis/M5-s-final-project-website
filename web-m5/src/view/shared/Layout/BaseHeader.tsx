@@ -64,8 +64,8 @@ const headers: Header[] = [
         name: 'About the project',
     }),
     new Header({
-        name: 'Computer usage',
-        route: Route.fromPath('/the-computer'),
+        name: 'User needs',
+        route: Route.fromPath('/needs'),
     }),
     new Header({
         name: 'GitHub project',
