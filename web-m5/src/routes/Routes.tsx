@@ -3,6 +3,7 @@ import {
     Route as RouterRoute,
     BrowserRouter,
 } from "react-router-dom";
+import ComputerUsage from "../view/computer/ComputerUsage";
 import MainScreen from "../view/mainScreen/MainScreen";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
 import { Route } from "./Route";
@@ -26,6 +27,10 @@ export default function Routes() {
 const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/'),
-        component: <MainScreen/>
+        component: <MainScreen/>,
+    },
+    {
+        route: Route.fromPath('/needs'),
+        component: <ComputerUsage/>,
     },
 ];

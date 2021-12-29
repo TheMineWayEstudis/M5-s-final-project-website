@@ -64,6 +64,10 @@ const headers: Header[] = [
         name: 'About the project',
     }),
     new Header({
+        name: 'User needs',
+        route: Route.fromPath('/needs'),
+    }),
+    new Header({
         name: 'GitHub project',
         route: new ExternalRoute("https://github.com/TheMineWayEstudis/M5-s-final-project-website"),
         icon: <GithubOutlined/>
