@@ -176,6 +176,38 @@ export default function ProgramsTable() {
             graphics: true,
             fastCPU: true,
             fastStorage: true,
+        },
+        {
+            icon: require('./resources/valorant.png'),
+            name: 'CS:GO',
+            purpose: 'gaming',
+            memory: true,
+            graphics: true,
+            fastCPU: true,
+        },
+        {
+            icon: require('./resources/dbd.png'),
+            name: 'Dead by daylight',
+            purpose: 'gaming',
+            graphics: true,
+            refrigeration: true,
+            fastCPU: true,
+            memory: true,
+        },
+        {
+            icon: require('./resources/paladins.png'),
+            name: 'Paladins',
+            purpose: 'gaming',
+            memory: true,
+            graphics: true,
+        },
+        {
+            icon: require('./resources/streamlabs.png'),
+            name: 'Streamlabs',
+            purpose: 'other',
+            graphics: true,
+            memory: true,
+            fastStorage: true,
         }
     ];
 
