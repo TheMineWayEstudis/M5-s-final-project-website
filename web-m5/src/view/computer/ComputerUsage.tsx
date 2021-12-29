@@ -1,5 +1,5 @@
 import { HeartOutlined } from '@ant-design/icons';
-import { Card, Col, Row, Image, Tooltip } from 'antd';
+import { Card, Col, Row, Tooltip, Modal } from 'antd';
 import ProgramsTable from '../programs/ProgramsTable';
 import SectionTitle from '../shared/components/SectionTitle';
 
@@ -40,6 +40,21 @@ export default function ComputerUsage() {
 
                                 <p style={{ textAlign: 'justify' }}>
                                     Yes, as every good gaming setup RGB must be present. We must pick as many components with RGB as we can.
+                                </p>
+                            </Card>
+                        </Col>
+                        <Col span={24}>
+                            <Card
+                                style={{ width: '100%' }}
+                            >
+                                <h2
+                                    style={{ fontWeight: 'bold' }}
+                                >
+                                    What about water cooling?
+                                </h2>
+
+                                <p style={{ textAlign: 'justify' }}>
+                                    Some components like the GPU and CPU should have a water cooling system in order to keep the computer at a good temperature level, but, as we were given infinite money to build the computer we can go ahead and build a whole water cooling system that brights in RGB just {<Tooltip title='Click for Portal reference'><div style={{display: 'inline'}} onClick={() => window.open('https://youtu.be/Y6ljFaKRTrI?t=26')}>because we can</div></Tooltip>}.
                                 </p>
                             </Card>
                         </Col>
