@@ -58,6 +58,21 @@ export default function ComputerUsage() {
                                 </p>
                             </Card>
                         </Col>
+                        <Col span={24}>
+                            <Card
+                                style={{ width: '100%' }}
+                            >
+                                <h2
+                                    style={{ fontWeight: 'bold' }}
+                                >
+                                    Do we want Raytracing?
+                                </h2>
+
+                                <p style={{ textAlign: 'justify' }}>
+                                    I want to have the best gaming experience ever seen so Raytracing is mandatory. Also, if I want to do some game development stuff I might need a powerful GPU so I can generate lightmaps, shaders and more.
+                                </p>
+                            </Card>
+                        </Col>
                     </Row>
                 </Col>
                 <Col lg={14} sm={24} style={{ width: '100%' }}>
