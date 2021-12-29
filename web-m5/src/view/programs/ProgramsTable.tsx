@@ -94,6 +94,7 @@ export default function ProgramsTable() {
                         multiple: 1,
                     },
                     defaultSortOrder: 'ascend',
+                    fixed: 'left',
                 },
                 ...headers.map((header: ProgramHeader, index: number) => (
                     {
