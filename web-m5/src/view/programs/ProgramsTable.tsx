@@ -89,10 +89,13 @@ export default function ProgramsTable() {
                         },
                     ],
                     onFilter: (value: string | number | boolean, record: Program) => record.purpose === value,
-                    sorter: (a: Program, b: Program) => a.name.localeCompare(b.name),
+                    sorter: {
+                        compare: (a: Program, b: Program) => a.name.localeCompare(b.name),
+                        multiple: 1,
+                    },
                     defaultSortOrder: 'ascend',
                 },
-                ...headers.map((header: ProgramHeader) => (
+                ...headers.map((header: ProgramHeader, index: number) => (
                     {
                         title: header.name,
                         dataIndex: header.value,
@@ -108,7 +111,10 @@ export default function ProgramsTable() {
                                 value: false,
                             },
                         ],
-                        sorter: (a: any, b: any) => (a[header.value] ? 1 : -1) - (b[header.value] ? 1 : -1),
+                        sorter: {
+                            compare: (a: any, b: any) => (a[header.value] ? 1 : -1) - (b[header.value] ? 1 : -1),
+                            multiple: index + 2,
+                        },
                     }
                 )),
             ]
