@@ -3,6 +3,8 @@ import Price from "../shared/components/Price";
 import MarketStudyElementSpecs from "./MarketStudyElementSpecs";
 
 export type ItemSpecs = {
+    // CPU
+
     ghz?: number;
     turboGhz?: number;
     cores?: number;
@@ -14,6 +16,29 @@ export type ItemSpecs = {
     integratedGPU?: boolean;
     cache?: number;
     unlocked?: boolean;
+
+    // MEMORY
+    memoryType?: 'DDR4-SDRAM';
+    memorySpeed?: number;
+
+    // MOTHERBOARD
+    maxRAM?: number;
+    hasBluetooth?: boolean;
+    hasWiFi?: boolean;
+    chipset?: string;
+    motherboardFactor?: 'ATX';
+    biosType?: 'UEFI AMI';
+    dualChannel?: boolean;
+    memorySlots?: number;
+    usb2_0?: number;
+    usb3_2_gen1?: number;
+    usb3_2_gen2?: number;
+    sata?: number;
+    hasEthernet?: boolean;
+    pciEx1?: number;
+    pciEx16?: number;
+    m2?: number;
+    audio?: '7.1';
 }
 
 export type MarketStudyItem = {
