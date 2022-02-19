@@ -27,6 +27,34 @@ const motherboards: MarketStudyItem[] = [
             m2: 3,
             biosType: 'UEFI AMI',
             bits: 64,
+            motherboardFactor: 'ATX',
+        }
+    },
+    {
+        name: "Gigabyte X570 AORUS XTreme",
+        manufacturer: "Gigabyte",
+        price: 698.93,
+        imageUrl: "https://img.pccomponentes.com/articles/23/236021/1.jpg",
+        purchaseUrl: "https://www.pccomponentes.com/gigabyte-x570-aorus-xtreme",
+        specs: {
+            socket: 'AM4',
+            memoryType: 'DDR4-SDRAM',
+            maxRAM: 128,
+            memorySlots: 4,
+            dualChannel: true,
+            motherboardFactor: 'Extended ATX',
+            hasEthernet: true,
+            hasWiFi: true,
+            hasBluetooth: true,
+            bits: 64,
+            usb2_0: 1,
+            sata: 6,
+            usb3_2_gen1: 3, // 2 + 1
+            usb3_2_gen2: 6, // 1 + 5
+            pciEx16: 3,
+            m2: 3,
+            biosType: 'UEFI AMI',
+            audio: '7.1'
         }
     }
 ];

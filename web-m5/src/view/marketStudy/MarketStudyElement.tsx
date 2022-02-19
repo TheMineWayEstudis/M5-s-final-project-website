@@ -26,7 +26,7 @@ export type ItemSpecs = {
     hasBluetooth?: boolean;
     hasWiFi?: boolean;
     chipset?: string;
-    motherboardFactor?: 'ATX';
+    motherboardFactor?: 'ATX' | 'Extended ATX';
     biosType?: 'UEFI AMI';
     dualChannel?: boolean;
     memorySlots?: number;
