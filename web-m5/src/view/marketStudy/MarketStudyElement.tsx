@@ -1,9 +1,16 @@
 import { Badge, Card, Image } from "antd"
+import Price from "../shared/components/Price";
+
+type ItemSpecs = {
+    
+}
 
 export type MarketStudyItem = {
     imageUrl: string;
     name: string;
     purchaseUrl: string;
+    price: number;
+    specs: ItemSpecs;
 
     choosen?: boolean;
 }
@@ -36,8 +43,9 @@ export default function MarketStudyElement(props: Props) {
                 hoverable
                 cover={<Image style={{ width: '100%' }} src={item.imageUrl} />}
                 title={item.name}
+                actions={[<a href={item.purchaseUrl} target="_blank">Purchase</a>]}
             >
-
+                <Price calculateIVA={true}>{item.price}</Price>
             </Card>
         </Choosen>
     );
