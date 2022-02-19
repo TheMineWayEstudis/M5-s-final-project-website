@@ -56,6 +56,33 @@ const motherboards: MarketStudyItem[] = [
             biosType: 'UEFI AMI',
             audio: '7.1'
         }
+    },
+    {
+        name: "ROG Crosshair VIII Formula",
+        manufacturer: "ASUS",
+        price: 484.98,
+        imageUrl: "https://img.pccomponentes.com/articles/21/217776/cvb.jpg",
+        purchaseUrl: "https://www.pccomponentes.com/asus-rog-crosshair-viii-formula",
+        specs: {
+            socket: 'AM4',
+            memoryType: 'DDR4-SDRAM',
+            memorySlots: 4,
+            maxRAM: 128,
+            dualChannel: true,
+            hasEthernet: true,
+            hasWiFi: true,
+            hasBluetooth: true,
+            sata: 8,
+            audio: '7.1',
+            motherboardFactor: 'ATX',
+            usb3_2_gen1: 4,
+            usb3_2_gen2: 8,
+            m2: 2,
+            biosType: 'UEFI AMI',
+            bits: 64,
+            pciEx1: 1,
+            pciEx16: 3,
+        }
     }
 ];
 
