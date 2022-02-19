@@ -1,4 +1,4 @@
-import { Badge, Card, Divider, Image } from "antd"
+import { Badge, Card, Divider, Image, Tag } from "antd";
 import Price from "../shared/components/Price";
 import MarketStudyElementSpecs from "./MarketStudyElementSpecs";
 
@@ -97,6 +97,7 @@ export default function MarketStudyElement(props: Props) {
                 actions={[<a href={item.purchaseUrl} target="_blank">Purchase</a>]}
             >
                 <Price calculateIVA={true}>{item.price}</Price>
+                <Tag color="pink">{item.manufacturer}</Tag>
                 <Divider/>
                 <MarketStudyElementSpecs specs={item.specs}/>
             </Card>
