@@ -18,6 +18,7 @@ const cpus: MarketStudyItem[] = [
             cache: 64,
             model: "5950X",
             unlocked: true,
+            integratedGPU: false,
         },
     },
     {
@@ -36,6 +37,7 @@ const cpus: MarketStudyItem[] = [
             bits: 64,
             model: "5900X",
             unlocked: true,
+            integratedGPU: false,
         },
     },
     {
@@ -54,6 +56,7 @@ const cpus: MarketStudyItem[] = [
             bits: 64,
             model: "5800X",
             unlocked: true,
+            integratedGPU: false,
         },
     },
 ];

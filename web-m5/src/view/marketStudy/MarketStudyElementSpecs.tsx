@@ -23,8 +23,10 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.pow && <Item title="Power consumption" value={specs.pow.toString() + "W"}/>}
             {specs.socket && <Item title="Socket" value={specs.socket}/>}
             {specs.bits && <Item title="Operative mode" value={specs.bits.toString() + " bits"}/>}
-            {specs.unlocked && <Item title="Unlocked" value={specs.unlocked ? "Yes" : "No"}/>}
+            {specs.unlocked !== undefined && <Item title="Unlocked" value={specs.unlocked ? "Yes" : "No"}/>}
             {specs.cache && <Item title="L3 cache" value={specs.cache + "MB"}/>}
+            {specs.model && <Item title="Model" value={specs.model}/>}
+            {specs.integratedGPU !== undefined && <Item title="Integrated graphics" value={specs.integratedGPU ? "Yes" : "No"}/>}
         </>
     );
 }
