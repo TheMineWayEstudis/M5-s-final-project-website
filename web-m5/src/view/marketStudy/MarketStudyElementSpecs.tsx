@@ -52,7 +52,14 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.m2 && <Item title="M.2 Slots" value={"x" + specs.m2}/>}
             {specs.audio && <Item title="Audio" value={specs.audio}/>}
 
+            {specs.diskSpace && <Item title="Disk space" value={specs.diskSpace.toString() + "TB"}/>}
+            {specs.diskWrite && <Item title="Disk write speed" value={specs.diskWrite.toString() + "MB/s"}/>}
+            {specs.diskRead && <Item title="Disk read speed" value={specs.diskRead.toString() + "MB/s"}/>}
+            {specs.smart !== undefined && <Item title="Supports S.M.A.R.T." value={specs.smart ? "Yes" : "No"}/>}
+            {specs.hardwareEncryption !== undefined && <Item title="HW encryption" value={specs.hardwareEncryption ? "Yes" : "No"}/>}
+
             {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
+            {specs.watercooling !== undefined && <Item title="Allows watercooling" value={specs.watercooling ? "Yes 💧" : "No"}/>}
         </>
     );
 }

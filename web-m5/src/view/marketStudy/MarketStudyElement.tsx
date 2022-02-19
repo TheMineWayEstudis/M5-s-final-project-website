@@ -43,8 +43,16 @@ export type ItemSpecs = {
     m2?: number;
     audio?: '7.1';
 
+    // DISK
+    diskWrite?: number;
+    diskRead?: number;
+    diskSpace?: number;
+    smart?: boolean;
+    hardwareEncryption?: boolean;
+
     // OTHER
     hasRGB?: boolean;
+    watercooling?: boolean;
 }
 
 export type MarketStudyItem = {

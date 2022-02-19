@@ -1,5 +1,6 @@
 import SectionTitle from '../shared/components/SectionTitle';
 import cpus from './components/CPUs';
+import m2s from './components/M2s';
 import motherboards from './components/MOTHERBOARDs';
 import rams from './components/RAMs';
 import { MarketStudyItem } from './MarketStudyElement';
@@ -19,6 +20,10 @@ export default function MarketStudy() {
         {
             title: "Main memory",
             components: rams,
+        },
+        {
+            title: "M.2",
+            components: m2s,
         },
     ];
 
