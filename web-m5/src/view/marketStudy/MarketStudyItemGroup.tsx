@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import { Col, Divider, Row } from 'antd';
 import MarketStudyElement, { MarketStudyItem } from './MarketStudyElement';
 
 type Props = {
@@ -16,13 +16,15 @@ export default function MarketStudyItemGroup(props: Props) {
             <Col
                 span={24}
             >
-                <h2
-                    style={{textAlign: 'center'}}
+                <Divider
+                    orientation='center'
                 >
-                    {props.asideIcon}
-                    {props.title}
-                    {props.asideIcon}
-                </h2>
+                    <h3>
+                        {props.asideIcon}
+                        {props.title}
+                        {props.asideIcon}
+                    </h3>
+                </Divider>
             </Col>
             {
                 props.items.map((i) => (
