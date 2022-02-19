@@ -15,8 +15,12 @@ export default function MarketStudy() {
         {
             title: "Motherboards",
             components: motherboards,
-        }
-    ]
+        },
+        {
+            title: "Main memory",
+            components: rams,
+        },
+    ];
 
     return (
         <>

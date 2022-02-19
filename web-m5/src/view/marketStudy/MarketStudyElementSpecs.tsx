@@ -30,6 +30,9 @@ export default function MarketStudyElementSpecs(props: Props) {
 
             {specs.memoryType && <Item title="Memory type" value={specs.memoryType}/>}
             {specs.memorySpeed && <Item title="Memory speed" value={specs.memorySpeed.toString() + "MHz"}/>}
+            {specs.memoryAmount && <Item title="Memory amount" value={specs.memoryAmount.toString() + "GB"}/>}
+            {specs.memoryLatency && <Item title="Memory CAS" value={specs.memoryLatency.toString()}/>}
+            {specs.memorySticks && <Item title="Memory sticks" value={"x" + specs.memorySticks.toString()}/>}
 
             {specs.maxRAM && <Item title="Max RAM" value={specs.maxRAM.toString() + "GB"}/>}
             {specs.hasBluetooth !== undefined && <Item title="Has bluetooth" value={specs.hasBluetooth ? "Yes" : "No"}/>}
@@ -48,6 +51,8 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.pciEx16 && <Item title="PCI Express x16" value={"x" + specs.pciEx16.toString()}/>}
             {specs.m2 && <Item title="M.2 Slots" value={"x" + specs.m2}/>}
             {specs.audio && <Item title="Audio" value={specs.audio}/>}
+
+            {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
         </>
     );
 }

@@ -20,6 +20,9 @@ export type ItemSpecs = {
     // MEMORY
     memoryType?: 'DDR4-SDRAM';
     memorySpeed?: number;
+    memoryAmount?: number;
+    memoryLatency?: number;
+    memorySticks?: number;
 
     // MOTHERBOARD
     maxRAM?: number;
@@ -39,6 +42,9 @@ export type ItemSpecs = {
     pciEx16?: number;
     m2?: number;
     audio?: '7.1';
+
+    // OTHER
+    hasRGB?: boolean;
 }
 
 export type MarketStudyItem = {
