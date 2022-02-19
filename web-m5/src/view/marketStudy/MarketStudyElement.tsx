@@ -1,8 +1,19 @@
-import { Badge, Card, Image } from "antd"
+import { Badge, Card, Divider, Image } from "antd"
 import Price from "../shared/components/Price";
+import MarketStudyElementSpecs from "./MarketStudyElementSpecs";
 
-type ItemSpecs = {
-    
+export type ItemSpecs = {
+    ghz?: number;
+    turboGhz?: number;
+    cores?: number;
+    threads?: number;
+    socket?: 'AM4';
+    model?: string;
+    bits?: 32 | 64;
+    pow?: number;
+    integratedGPU?: boolean;
+    cache?: number;
+    unlocked?: boolean;
 }
 
 export type MarketStudyItem = {
@@ -11,6 +22,7 @@ export type MarketStudyItem = {
     purchaseUrl: string;
     price: number;
     specs: ItemSpecs;
+    manufacturer: string;
 
     choosen?: boolean;
 }
@@ -46,6 +58,8 @@ export default function MarketStudyElement(props: Props) {
                 actions={[<a href={item.purchaseUrl} target="_blank">Purchase</a>]}
             >
                 <Price calculateIVA={true}>{item.price}</Price>
+                <Divider/>
+                <MarketStudyElementSpecs specs={item.specs}/>
             </Card>
         </Choosen>
     );
