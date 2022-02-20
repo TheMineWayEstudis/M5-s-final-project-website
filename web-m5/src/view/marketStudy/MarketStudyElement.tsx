@@ -49,6 +49,8 @@ export type ItemSpecs = {
     diskSpace?: number;
     smart?: boolean;
     hardwareEncryption?: boolean;
+    diskRPM?: number;
+    diskTransfer?: number;
 
     // OTHER
     hasRGB?: boolean;

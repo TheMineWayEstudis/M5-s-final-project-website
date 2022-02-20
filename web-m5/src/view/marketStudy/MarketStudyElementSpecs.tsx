@@ -57,6 +57,8 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.diskRead && <Item title="Disk read speed" value={specs.diskRead.toString() + "MB/s"}/>}
             {specs.smart !== undefined && <Item title="Supports S.M.A.R.T." value={specs.smart ? "Yes" : "No"}/>}
             {specs.hardwareEncryption !== undefined && <Item title="HW encryption" value={specs.hardwareEncryption ? "Yes" : "No"}/>}
+            {specs.diskRPM && <Item title="Disk RPM" value={specs.diskRPM.toString() + "RPM"}/>}
+            {specs.diskTransfer && <Item title="Disk transfer" value={specs.diskTransfer.toString() + "Gbit/s"}/>}
 
             {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
             {specs.watercooling !== undefined && <Item title="Allows watercooling" value={specs.watercooling ? "Yes 💧" : "No"}/>}
