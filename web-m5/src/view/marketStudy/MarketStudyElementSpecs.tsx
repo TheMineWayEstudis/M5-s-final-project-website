@@ -60,8 +60,14 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.diskRPM && <Item title="Disk RPM" value={specs.diskRPM.toString() + "RPM"}/>}
             {specs.diskTransfer && <Item title="Disk transfer" value={specs.diskTransfer.toString() + "Gbit/s"}/>}
 
+            {specs.powSupply && <Item title="Supplies" value={specs.powSupply.toString() + "W"}/>}
+            {specs.isModular && <Item title="Modular" value={specs.isModular ? "Yes" : "No"}/>}
+            {specs.caEntry && <Item title="CA entry" value={specs.caEntry[0].toString() + "V - " + specs.caEntry[1].toString() + "V"}/>}
+            {specs.powerEfficiency && <Item title="Power efficiency" value={specs.powerEfficiency.toString() + "%"}/>}
+
             {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
             {specs.watercooling !== undefined && <Item title="Allows watercooling" value={specs.watercooling ? "Yes 💧" : "No"}/>}
+            {specs.airCooling && <Item title="Air cooling" value={specs.airCooling ? "Yes" : "No"}/>}
         </>
     );
 }

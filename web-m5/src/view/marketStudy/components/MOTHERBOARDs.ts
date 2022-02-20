@@ -3,7 +3,7 @@ import { MarketStudyItem } from "../MarketStudyElement";
 const motherboards: MarketStudyItem[] = [
     {
         name: "ROG Crosshair VII Extreme",
-        manufacturer: "ASUS",
+        manufacturer: "Asus",
         price: 767.2,
         imageUrl: "https://img.pccomponentes.com/articles/57/572148/1235-asus-rog-crosshair-viii-extreme.jpg",
         purchaseUrl: "https://www.pccomponentes.com/asus-rog-crosshair-viii-extreme",
@@ -28,6 +28,7 @@ const motherboards: MarketStudyItem[] = [
             biosType: 'UEFI AMI',
             bits: 64,
             motherboardFactor: 'ATX',
+            hasRGB: true,
         }
     },
     {
@@ -54,12 +55,13 @@ const motherboards: MarketStudyItem[] = [
             pciEx16: 3,
             m2: 3,
             biosType: 'UEFI AMI',
-            audio: '7.1'
+            audio: '7.1',
+            hasRGB: true,
         }
     },
     {
         name: "ROG Crosshair VIII Formula",
-        manufacturer: "ASUS",
+        manufacturer: "Asus",
         price: 484.98,
         imageUrl: "https://img.pccomponentes.com/articles/21/217776/cvb.jpg",
         purchaseUrl: "https://www.pccomponentes.com/asus-rog-crosshair-viii-formula",
@@ -82,8 +84,9 @@ const motherboards: MarketStudyItem[] = [
             bits: 64,
             pciEx1: 1,
             pciEx16: 3,
-        }
-    }
+            hasRGB: true,
+        },
+    },
 ];
 
 export default motherboards;

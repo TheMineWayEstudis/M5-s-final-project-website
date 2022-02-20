@@ -52,9 +52,16 @@ export type ItemSpecs = {
     diskRPM?: number;
     diskTransfer?: number;
 
+    // POWER SUPPLY
+    powSupply?: number;
+    isModular?: boolean;
+    caEntry?: [number, number];
+    powerEfficiency?: number;
+
     // OTHER
     hasRGB?: boolean;
     watercooling?: boolean;
+    airCooling?: boolean;
 }
 
 export type MarketStudyItem = {

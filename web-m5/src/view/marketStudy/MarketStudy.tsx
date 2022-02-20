@@ -3,6 +3,7 @@ import cpus from './components/CPUs';
 import disks from './components/DISKs';
 import m2s from './components/M2s';
 import motherboards from './components/MOTHERBOARDs';
+import powerSupplies from './components/POWER_SUPPLYs';
 import rams from './components/RAMs';
 import { MarketStudyItem } from './MarketStudyElement';
 import MarketStudyItemGroup from './MarketStudyItemGroup';
@@ -29,6 +30,10 @@ export default function MarketStudy() {
         {
             title: "Disks",
             components: disks,
+        },
+        {
+            title: "Power supplies",
+            components: powerSupplies,
         },
     ];
 
