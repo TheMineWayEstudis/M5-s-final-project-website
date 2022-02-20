@@ -17,6 +17,7 @@ export default function MarketStudyElementSpecs(props: Props) {
     return (
         <>
             {specs.ghz && <Item title="Clock speed" value={specs.ghz.toString() + "GHz"}/>}
+            {specs.mhz && <Item title="Clock speed" value={specs.mhz.toString() + "MHz"}/>}
             {specs.turboGhz && <Item title="Turbo clock speed" value={specs.turboGhz.toString() + "GHz"}/>}
             {specs.cores && <Item title="Cores" value={"x" + specs.cores.toString()}/>}
             {specs.threads && <Item title="Threads" value={"x" + specs.threads.toString()}/>}
@@ -61,13 +62,20 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.diskTransfer && <Item title="Disk transfer" value={specs.diskTransfer.toString() + "Gbit/s"}/>}
 
             {specs.powSupply && <Item title="Supplies" value={specs.powSupply.toString() + "W"}/>}
-            {specs.isModular && <Item title="Modular" value={specs.isModular ? "Yes" : "No"}/>}
+            {specs.isModular !== undefined && <Item title="Modular" value={specs.isModular ? "Yes" : "No"}/>}
             {specs.caEntry && <Item title="CA entry" value={specs.caEntry[0].toString() + "V - " + specs.caEntry[1].toString() + "V"}/>}
             {specs.powerEfficiency && <Item title="Power efficiency" value={specs.powerEfficiency.toString() + "%"}/>}
 
+            {specs.pciEType && <Item title="PCIe type" value={specs.pciEType}/>}
+            {specs.cudaCores && <Item title="Cuda Cores" value={"x" + specs.cudaCores.toString()}/>}
+            {specs.vrReady !== undefined && <Item title="VR ready" value={specs.vrReady ? "Yes" : "No"}/>}
+            {specs.hdmiPort && <Item title="HDMI ports" value={"x" + specs.hdmiPort.toString()}/>}
+            {specs.displayPort && <Item title="DisplayPort ports" value={"x" + specs.displayPort.toString()}/>}
+            {specs.dviPort && <Item title="DVI ports" value={"x" + specs.dviPort.toString()}/>}
+
             {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
             {specs.watercooling !== undefined && <Item title="Allows watercooling" value={specs.watercooling ? "Yes 💧" : "No"}/>}
-            {specs.airCooling && <Item title="Air cooling" value={specs.airCooling ? "Yes" : "No"}/>}
+            {specs.airCooling !== undefined && <Item title="Air cooling" value={specs.airCooling ? "Yes" : "No"}/>}
         </>
     );
 }

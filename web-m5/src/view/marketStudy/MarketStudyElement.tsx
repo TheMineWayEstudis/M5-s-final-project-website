@@ -4,8 +4,8 @@ import MarketStudyElementSpecs from "./MarketStudyElementSpecs";
 
 export type ItemSpecs = {
     // CPU
-
     ghz?: number;
+    mhz?: number;
     turboGhz?: number;
     cores?: number;
     threads?: number;
@@ -18,7 +18,7 @@ export type ItemSpecs = {
     unlocked?: boolean;
 
     // MEMORY
-    memoryType?: 'DDR4-SDRAM';
+    memoryType?: 'DDR4-SDRAM' | 'GDDR6X';
     memorySpeed?: number;
     memoryAmount?: number;
     memoryLatency?: number;
@@ -57,6 +57,14 @@ export type ItemSpecs = {
     isModular?: boolean;
     caEntry?: [number, number];
     powerEfficiency?: number;
+
+    // GRAPHICS
+    pciEType?: 'PCIe 4.0';
+    cudaCores?: number;
+    vrReady?: boolean;
+    displayPort?: number;
+    hdmiPort?: number;
+    dviPort?: number;
 
     // OTHER
     hasRGB?: boolean;
