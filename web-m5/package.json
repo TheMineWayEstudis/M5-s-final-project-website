@@ -1,4 +1,7 @@
 {
+  "homepage": "https://github.com/TheMineWayEstudis/M5-s-final-project-website",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "name": "web-m5",
   "version": "0.1.0",
   "private": true,
