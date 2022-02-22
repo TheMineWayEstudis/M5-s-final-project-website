@@ -30,9 +30,11 @@ jobs:
         
     - name: Install dependencies
       run: npm install
+      working-directory: web-m5
       
     - name: Build
       run: npm run build
+      working-directory: web-m5
       
     - name: Deploy
       run: |
@@ -40,6 +42,7 @@ jobs:
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
+      working-directory: web-m5
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
