@@ -32,6 +32,9 @@ jobs:
         cache: 'npm'
         cache-dependency-path: web-m5/package-lock.json
         
+    - name: Install GH Pages
+      run: npm install -g gh-pages --save-dev
+      
     - name: Install dependencies
       run: npm install
       
