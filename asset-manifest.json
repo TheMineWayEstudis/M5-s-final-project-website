@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/M5-s-final-project-website/static/css/main.910ebb3e.css",
-    "main.js": "/M5-s-final-project-website/static/js/main.8d233736.js",
-    "static/media/assassins_creed.png": "/M5-s-final-project-website/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
-    "static/media/Yoshi.jpg": "/M5-s-final-project-website/static/media/Yoshi.969f747d0cf48e255613.jpg",
-    "static/media/minecraft.png": "/M5-s-final-project-website/static/media/minecraft.3851d03231e609ddb9e4.png",
-    "static/media/paladins.png": "/M5-s-final-project-website/static/media/paladins.e2d26dae97f3e5aa9952.png",
-    "static/media/streamlabs.png": "/M5-s-final-project-website/static/media/streamlabs.eb55a6359a4a537206b6.png",
-    "static/media/dbd.png": "/M5-s-final-project-website/static/media/dbd.39916310f084cb65bd51.png",
-    "static/media/android_studio.png": "/M5-s-final-project-website/static/media/android_studio.b463db76250164fc2760.png",
-    "static/media/vscode.png": "/M5-s-final-project-website/static/media/vscode.331e5cb33238bdfed344.png",
-    "static/media/react.jpg": "/M5-s-final-project-website/static/media/react.da7902284af096a15ec4.jpg",
-    "static/media/vmware.png": "/M5-s-final-project-website/static/media/vmware.8f47a3daafabf35fe739.png",
-    "static/media/github.jpg": "/M5-s-final-project-website/static/media/github.63a78ed4baa43c498f4b.jpg",
-    "index.html": "/M5-s-final-project-website/index.html",
-    "main.910ebb3e.css.map": "/M5-s-final-project-website/static/css/main.910ebb3e.css.map",
-    "main.8d233736.js.map": "/M5-s-final-project-website/static/js/main.8d233736.js.map"
+    "main.css": "/static/css/main.910ebb3e.css",
+    "main.js": "/static/js/main.151fa113.js",
+    "static/media/assassins_creed.png": "/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
+    "static/media/Yoshi.jpg": "/static/media/Yoshi.969f747d0cf48e255613.jpg",
+    "static/media/minecraft.png": "/static/media/minecraft.3851d03231e609ddb9e4.png",
+    "static/media/paladins.png": "/static/media/paladins.e2d26dae97f3e5aa9952.png",
+    "static/media/streamlabs.png": "/static/media/streamlabs.eb55a6359a4a537206b6.png",
+    "static/media/dbd.png": "/static/media/dbd.39916310f084cb65bd51.png",
+    "static/media/android_studio.png": "/static/media/android_studio.b463db76250164fc2760.png",
+    "static/media/vscode.png": "/static/media/vscode.331e5cb33238bdfed344.png",
+    "static/media/react.jpg": "/static/media/react.da7902284af096a15ec4.jpg",
+    "static/media/vmware.png": "/static/media/vmware.8f47a3daafabf35fe739.png",
+    "static/media/github.jpg": "/static/media/github.63a78ed4baa43c498f4b.jpg",
+    "index.html": "/index.html",
+    "main.910ebb3e.css.map": "/static/css/main.910ebb3e.css.map",
+    "main.151fa113.js.map": "/static/js/main.151fa113.js.map"
   },
   "entrypoints": [
     "static/css/main.910ebb3e.css",
-    "static/js/main.8d233736.js"
+    "static/js/main.151fa113.js"
   ]
 }
