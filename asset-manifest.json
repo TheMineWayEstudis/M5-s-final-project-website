@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.910ebb3e.css",
-    "main.js": "/static/js/main.151fa113.js",
+    "main.js": "/static/js/main.9aea0fb9.js",
     "static/media/assassins_creed.png": "/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
     "static/media/Yoshi.jpg": "/static/media/Yoshi.969f747d0cf48e255613.jpg",
     "static/media/minecraft.png": "/static/media/minecraft.3851d03231e609ddb9e4.png",
@@ -15,10 +15,10 @@
     "static/media/github.jpg": "/static/media/github.63a78ed4baa43c498f4b.jpg",
     "index.html": "/index.html",
     "main.910ebb3e.css.map": "/static/css/main.910ebb3e.css.map",
-    "main.151fa113.js.map": "/static/js/main.151fa113.js.map"
+    "main.9aea0fb9.js.map": "/static/js/main.9aea0fb9.js.map"
   },
   "entrypoints": [
     "static/css/main.910ebb3e.css",
-    "static/js/main.151fa113.js"
+    "static/js/main.9aea0fb9.js"
   ]
 }
