@@ -1,5 +1,4 @@
 {
-  "homepage": "https://theminewayestudis.github.io/M5-s-final-project-website",
   "predeploy": "npm run build",
   "deploy": "gh-pages -b main -d build",
   "name": "web-m5",
