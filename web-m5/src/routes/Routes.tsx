@@ -10,7 +10,7 @@ import { Route } from "./Route";
 
 export default function Routes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <RouterRoutes>
                 {routes.map((route: { route: Route, component: JSX.Element }) => (
                     <RouterRoute path={route.route.getPath()} element={
