@@ -80,6 +80,7 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.factor && <Item title="Box size factor" value={specs.factor}/>}
             {specs.powerSupplyPosition && <Item title="Power supply position" value={specs.powerSupplyPosition}/>}
 
+            {specs.fans && <Item title="Fans" value={"x" + specs.fans.toString()}/>}
             {specs.width && <Item title="Width" value={size(specs.width)}/>}
             {specs.height && <Item title="Height" value={size(specs.height)}/>}
             {specs.depth && <Item title="Depth" value={size(specs.depth)}/>}

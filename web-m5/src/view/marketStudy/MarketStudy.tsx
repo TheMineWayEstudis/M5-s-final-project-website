@@ -1,6 +1,7 @@
 import SectionTitle from '../shared/components/SectionTitle';
 import boxes from './components/BOXes';
 import cpus from './components/CPUs';
+import cpuWatercoolings from './components/CPU_WATERCOOLINGs';
 import disks from './components/DISKs';
 import firewires from './components/FIREWIREs';
 import graphics from './components/GRAPHICs';
@@ -37,6 +38,10 @@ export default function MarketStudy() {
         {
             title: "Disks",
             components: disks,
+        },
+        {
+            title: "CPU Watercoolings",
+            components: cpuWatercoolings,
         },
         {
             title: "Power supplies",

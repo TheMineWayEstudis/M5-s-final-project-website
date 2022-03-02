@@ -81,6 +81,7 @@ export type ItemSpecs = {
     powerSupplyPosition?: Positions;
 
     // OTHER
+    fans?: number;
     hasRGB?: boolean;
     watercooling?: boolean;
     airCooling?: boolean;
