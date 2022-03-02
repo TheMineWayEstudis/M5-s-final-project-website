@@ -1,3 +1,4 @@
+import size from "../../formatters/Size";
 import { ItemSpecs } from "./MarketStudyElement";
 
 type Props = {
@@ -45,6 +46,8 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.memorySlots && <Item title="Memory slots" value={"x" + specs.memorySlots.toString()}/>}
             {specs.usb2_0 && <Item title="USB 2.0" value={"x" + specs.usb2_0}/>}
             {specs.usb3_2_gen1 && <Item title="USB 3.2 (Gen 1)" value={"x" + specs.usb3_2_gen1.toString()}/>}
+            {specs.usb3_0 && <Item title="USB 3.0" value={"x" + specs.usb3_0.toString()}/>}
+            {specs.usb3_1_c && <Item title="USB (Type C) 3.1" value={"x" + specs.usb3_1_c.toString()}/>}
             {specs.usb3_2_gen2 && <Item title="USB 3.2 (Gen 2)" value={"x" + specs.usb3_2_gen2.toString()}/>}
             {specs.sata && <Item title="SATA connectors" value={"x" + specs.sata.toString()}/>}
             {specs.hasEthernet !== undefined && <Item title="Has Ethernet" value={specs.hasEthernet ? "Yes" : "No"}/>}
@@ -73,6 +76,12 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.displayPort && <Item title="DisplayPort ports" value={"x" + specs.displayPort.toString()}/>}
             {specs.dviPort && <Item title="DVI ports" value={"x" + specs.dviPort.toString()}/>}
 
+            {specs.factor && <Item title="Box size factor" value={specs.factor}/>}
+            {specs.powerSupplyPosition && <Item title="Power supply position" value={specs.powerSupplyPosition}/>}
+
+            {specs.width && <Item title="Width" value={size(specs.width)}/>}
+            {specs.height && <Item title="Height" value={size(specs.height)}/>}
+            {specs.depth && <Item title="Depth" value={size(specs.depth)}/>}
             {specs.hasRGB !== undefined && <Item title="RGB" value={specs.hasRGB ? "Yes 🌈" : "No"}/>}
             {specs.watercooling !== undefined && <Item title="Allows watercooling" value={specs.watercooling ? "Yes 💧" : "No"}/>}
             {specs.airCooling !== undefined && <Item title="Air cooling" value={specs.airCooling ? "Yes" : "No"}/>}

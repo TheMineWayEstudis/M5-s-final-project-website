@@ -2,6 +2,13 @@ import { Badge, Card, Divider, Image, Tag } from "antd";
 import Price from "../shared/components/Price";
 import MarketStudyElementSpecs from "./MarketStudyElementSpecs";
 
+export enum Positions {
+    top = 'Top',
+    bottom = 'Bottom',
+    left = 'Left',
+    right = 'Right',
+}
+
 export type ItemSpecs = {
     // CPU
     ghz?: number;
@@ -36,6 +43,8 @@ export type ItemSpecs = {
     usb2_0?: number;
     usb3_2_gen1?: number;
     usb3_2_gen2?: number;
+    usb3_0?: number;
+    usb3_1_c?: number;
     sata?: number;
     hasEthernet?: boolean;
     pciEx1?: number;
@@ -66,10 +75,17 @@ export type ItemSpecs = {
     hdmiPort?: number;
     dviPort?: number;
 
+    // BOX
+    factor?: 'ATX';
+    powerSupplyPosition?: Positions;
+
     // OTHER
     hasRGB?: boolean;
     watercooling?: boolean;
     airCooling?: boolean;
+    width?: number;
+    height?: number;
+    depth?: number;
 }
 
 export type MarketStudyItem = {

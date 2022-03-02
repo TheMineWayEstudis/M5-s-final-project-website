@@ -1,4 +1,5 @@
 import SectionTitle from '../shared/components/SectionTitle';
+import boxes from './components/BOXes';
 import cpus from './components/CPUs';
 import disks from './components/DISKs';
 import graphics from './components/GRAPHICs';
@@ -39,6 +40,10 @@ export default function MarketStudy() {
         {
             title: "Power supplies",
             components: powerSupplies,
+        },
+        {
+            title: "Boxes",
+            components: boxes,
         },
     ];
 
