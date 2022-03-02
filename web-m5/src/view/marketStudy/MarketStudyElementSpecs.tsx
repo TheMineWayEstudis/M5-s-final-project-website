@@ -48,6 +48,7 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.usb3_2_gen1 && <Item title="USB 3.2 (Gen 1)" value={"x" + specs.usb3_2_gen1.toString()}/>}
             {specs.usb3_0 && <Item title="USB 3.0" value={"x" + specs.usb3_0.toString()}/>}
             {specs.usb3_1_c && <Item title="USB (Type C) 3.1" value={"x" + specs.usb3_1_c.toString()}/>}
+            {specs.firewire && <Item title="FireWire" value={"x" + specs.firewire.toString()}/>}
             {specs.usb3_2_gen2 && <Item title="USB 3.2 (Gen 2)" value={"x" + specs.usb3_2_gen2.toString()}/>}
             {specs.sata && <Item title="SATA connectors" value={"x" + specs.sata.toString()}/>}
             {specs.hasEthernet !== undefined && <Item title="Has Ethernet" value={specs.hasEthernet ? "Yes" : "No"}/>}

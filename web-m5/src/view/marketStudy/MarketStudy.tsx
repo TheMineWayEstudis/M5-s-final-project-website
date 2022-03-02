@@ -2,6 +2,7 @@ import SectionTitle from '../shared/components/SectionTitle';
 import boxes from './components/BOXes';
 import cpus from './components/CPUs';
 import disks from './components/DISKs';
+import firewires from './components/FIREWIREs';
 import graphics from './components/GRAPHICs';
 import m2s from './components/M2s';
 import motherboards from './components/MOTHERBOARDs';
@@ -44,6 +45,10 @@ export default function MarketStudy() {
         {
             title: "Boxes",
             components: boxes,
+        },
+        {
+            title: "FireWires",
+            components: firewires,
         },
     ];
 

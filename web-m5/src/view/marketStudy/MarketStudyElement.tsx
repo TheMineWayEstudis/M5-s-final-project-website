@@ -45,6 +45,7 @@ export type ItemSpecs = {
     usb3_2_gen2?: number;
     usb3_0?: number;
     usb3_1_c?: number;
+    firewire?: number;
     sata?: number;
     hasEthernet?: boolean;
     pciEx1?: number;
