@@ -4,13 +4,14 @@ import MarketStudyElement, { MarketStudyItem } from './MarketStudyElement';
 type Props = {
     items: MarketStudyItem[];
     title: string;
+    desc: string[];
     asideIcon?: JSX.Element;
 }
 
 export default function MarketStudyItemGroup(props: Props) {
     return (
         <Row
-            gutter={[24,24]}
+            gutter={[24, 24]}
             justify="center"
         >
             <Col
@@ -26,18 +27,41 @@ export default function MarketStudyItemGroup(props: Props) {
                     </h3>
                 </Divider>
             </Col>
-            {
-                props.items.map((i) => (
+            <Col span={24}>
+                <Row
+                    gutter={[24, 24]}
+                    justify="center"
+                >
                     <Col
                         xs={24}
-                        md={8}
-                        lg={6}
-                        xxl={4}
+                        lg={18}
+                        xxl={12}
                     >
-                        <MarketStudyElement item={i}/>
+                        {
+                            props.desc.map((line) => <p style={{textAlign: 'justify'}}>{line}</p>)
+                        }
                     </Col>
-                ))
-            }
+                </Row>
+            </Col>
+            <Col span={24}>
+                <Row
+                    gutter={[24, 24]}
+                    justify="center"
+                >
+                    {
+                        props.items.map((i) => (
+                            <Col
+                                xs={24}
+                                md={8}
+                                lg={6}
+                                xxl={4}
+                            >
+                                <MarketStudyElement item={i} />
+                            </Col>
+                        ))
+                    }
+                </Row>
+            </Col>
         </Row>
     );
 }
