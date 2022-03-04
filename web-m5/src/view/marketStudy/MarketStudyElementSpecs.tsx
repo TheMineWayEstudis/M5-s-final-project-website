@@ -87,7 +87,10 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.screenType && <Item title="Screen type" value={specs.screenType}/>}
             {specs.includesSpeakers !== undefined && <Item title="Has speakers" value={specs.includesSpeakers ? "Yes" : "No"}/>}
 
+            {specs.cactusUnits && <Item title="Cactus units" value={"x" + specs.cactusUnits.toString()}/>}
+
             {specs.fans && <Item title="Fans" value={"x" + specs.fans.toString()}/>}
+            {specs.powerConsumption !== undefined && <Item title="Power consumption" value={specs.powerConsumption.toString() + "W"}/>}
             {specs.width && <Item title="Width" value={size(specs.width)}/>}
             {specs.height && <Item title="Height" value={size(specs.height)}/>}
             {specs.depth && <Item title="Depth" value={size(specs.depth)}/>}

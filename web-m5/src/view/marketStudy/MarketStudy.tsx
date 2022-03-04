@@ -1,5 +1,6 @@
 import SectionTitle from '../shared/components/SectionTitle';
 import boxes from './components/BOXes';
+import cactuses from './components/CACTUSes';
 import cpus from './components/CPUs';
 import cpuWatercoolings from './components/CPU_WATERCOOLINGs';
 import disks from './components/DISKs';
@@ -59,6 +60,10 @@ export default function MarketStudy() {
         {
             title: "Screens",
             components: screens,
+        },
+        {
+            title: "Cacti 🌵",
+            components: cactuses,
         },
     ];
 

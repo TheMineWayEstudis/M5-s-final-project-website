@@ -88,6 +88,9 @@ export type ItemSpecs = {
     screenType?: 'IPS';
     includesSpeakers?: boolean;
 
+    // CACTUS
+    cactusUnits?: number;
+
     // OTHER
     fans?: number;
     hasRGB?: boolean;
@@ -96,6 +99,7 @@ export type ItemSpecs = {
     width?: number;
     height?: number;
     depth?: number;
+    powerConsumption?: number;
 }
 
 export type MarketStudyItem = {
