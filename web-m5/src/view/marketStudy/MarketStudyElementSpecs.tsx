@@ -80,6 +80,13 @@ export default function MarketStudyElementSpecs(props: Props) {
             {specs.factor && <Item title="Box size factor" value={specs.factor}/>}
             {specs.powerSupplyPosition && <Item title="Power supply position" value={specs.powerSupplyPosition}/>}
 
+            {specs.hz && <Item title="Hertz" value={specs.hz.toString() + "Hz"}/>}
+            {specs.resolution && <Item title="Resolution" value={specs.resolution}/>}
+            {specs.inches && <Item title="Size" value={specs.inches.toString() + "\""}/>}
+            {specs.gSync !== undefined && <Item title="Has G-Sync" value={specs.gSync ? "Yes" : "No"}/>}
+            {specs.screenType && <Item title="Screen type" value={specs.screenType}/>}
+            {specs.includesSpeakers !== undefined && <Item title="Has speakers" value={specs.includesSpeakers ? "Yes" : "No"}/>}
+
             {specs.fans && <Item title="Fans" value={"x" + specs.fans.toString()}/>}
             {specs.width && <Item title="Width" value={size(specs.width)}/>}
             {specs.height && <Item title="Height" value={size(specs.height)}/>}

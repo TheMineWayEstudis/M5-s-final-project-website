@@ -80,6 +80,14 @@ export type ItemSpecs = {
     factor?: 'ATX';
     powerSupplyPosition?: Positions;
 
+    // SCREEN
+    hz?: number;
+    resolution?: '4K' |'1080p';
+    inches?: number;
+    gSync?: boolean;
+    screenType?: 'IPS';
+    includesSpeakers?: boolean;
+
     // OTHER
     fans?: number;
     hasRGB?: boolean;
