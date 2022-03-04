@@ -21,7 +21,7 @@ export default function MarketStudy() {
             title: "Processors",
             components: cpus,
             explanation: [
-                "This compuner needs a lot of CPU power because the main objective of this computer is to be able to run multiple (and hardware-expensive) programs, such as IDEs, videogames, game engines, and more. Those activities require the CPU to be able to multithread several processes within numerous cores in order to keep a good performance.",
+                "This compuner needs a lot of CPU power because the main objective of this computer is to be able to run multiple (and high-performant) programs, such as IDEs, videogames, game engines, and more. Those activities require the CPU to be able to multithread several processes within numerous cores in order to keep a good performance.",
                 "That is the main reason why this computer reqires a fast CPU with multiple cores.",
             ],
         },
@@ -38,32 +38,48 @@ export default function MarketStudy() {
         {
             title: "Graphics",
             components: graphics,
-            explanation: [],
+            explanation: [
+                "Or computer is a gaming computer, so we will require the best graphics card we are able to find.",
+                "The choosen ones are the 3000 series of NVidia because they have the best performance of the market nowadays. We require at least 12GB of graphics memory if we want to run videogames and expect to have the best graphics experience. We also want the graphics card to be refrigerated proporly, so we have to find one that has better refrigeration than visual design.",
+            ],
         },
         {
             title: "Main memory",
             components: rams,
-            explanation: [],
+            explanation: [
+                "As we want to run game engines, videogames, IDEs, virtual machines and at least one chrome tab, we need lots of fast memory (RAM). Obviously we will discard all RAMS that are not DDR4.",
+                "It is mandatory to use as much RAM slots as possible so quad-channel can come in the play. 32GB-64GB is the memory amout that I expect to have, and at least 3200MHz of memory speed (we will need to calculate latency later using this number).",
+            ],
         },
         {
             title: "M.2",
             components: m2s,
-            explanation: [],
+            explanation: [
+                "We need a fast and reliable storage system so we can load data in the memory as fast as possible, that is when the M.2. comes in.",
+                "As we will store lots of data (games, programs, files, etc) we will need a 1TB (at least) drive. Not all M.2. are the same, some are faster than others, so we have to find some that have good data-transfer bandwidths.",
+            ],
         },
         {
             title: "Disks",
             components: disks,
-            explanation: [],
+            explanation: [
+                "As the massive storage drive we do not need very fast data-transfer bandwithd so we can use any disk available (SSD or HDD). As a requirement I require at least 8TB of storage capacity.",
+            ],
         },
         {
             title: "CPU Watercoolings",
             components: cpuWatercoolings,
-            explanation: [],
+            explanation: [
+                "We want our CPU to stay cool so we must use a watercooling system instead of the standard air refrigerator. We want one that has RGB capable of being syncronized with the box light's, so an RGB controller is mandatory.",
+                "I expect to have a powerful refrigeration system so it should have at least 3 fans.",
+            ],
         },
         {
             title: "Power supplies",
             components: powerSupplies,
-            explanation: [],
+            explanation: [
+                "As the computer is very powerful and power-consuming we require a good power supply so we can power all components proporly.",
+            ],
         },
         {
             title: "Boxes",
