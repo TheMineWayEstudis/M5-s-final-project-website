@@ -94,8 +94,8 @@ export default function InvoiceTable(props: Props) {
                             <>
                                 <Table.Summary.Row>
                                     <Table.Summary.Cell index={0} colSpan={2}></Table.Summary.Cell>
-                                    <Table.Summary.Cell index={1}>Total: {processPrice(Math.floor(price * 100) / 100)}€</Table.Summary.Cell>
-                                    <Table.Summary.Cell index={2}>Total: {processPrice(Math.round(calculateIva(price, props.iva) * 100) / 100)}€</Table.Summary.Cell>
+                                    <Table.Summary.Cell index={1}>Total: <b>{processPrice(Math.floor(price * 100) / 100)}€</b></Table.Summary.Cell>
+                                    <Table.Summary.Cell index={2}>Total: <b>{processPrice(Math.round(calculateIva(price, props.iva) * 100) / 100)}€</b></Table.Summary.Cell>
                                 </Table.Summary.Row>
                             </>
                         );
