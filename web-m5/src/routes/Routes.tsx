@@ -45,7 +45,7 @@ const routes: { route: Route, component: JSX.Element }[] = [
         component: <RequiredTools/>,
     },
     {
-        route: Route.fromPath('/computer/bill'),
+        route: Route.fromPath('/computer/budget'),
         component: <Bill/>,
     },
 ];

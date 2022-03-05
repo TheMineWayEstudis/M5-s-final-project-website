@@ -79,8 +79,8 @@ const headers: Header[] = [
                 route: Route.fromPath('/computer/tools'),
             }),
             new Header({
-                name: 'Bill',
-                route: Route.fromPath('/computer/bill'),
+                name: 'Budget',
+                route: Route.fromPath('/computer/budget'),
             }),
         ],
     }),
