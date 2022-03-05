@@ -31,7 +31,14 @@ const tools: Tool[] = [
         price: 7.43,
         category: 'Required',
         reason: "This wristband helps to avoid external electricity from arriving to the component we are working with. It is recommended to use them but I will require it because I don't want to break such a expensive computer.",
-    }
+    },{
+        name: "Wire bridles",
+        purchaseUrl: "https://www.pccomponentes.com/digitus-bridas-cable-con-velcro-colores-150mm-50-unidades",
+        imageUrl: "https://img.pccomponentes.com/articles/23/232491/ak770904150m-4016032326960-front-rgb.jpg",
+        price: 11.6,
+        category: 'Recommended',
+        reason: "We want a clean and organized computer build, so we might want some bridles in order to keep every wire grouped and clean. As in the pack there are 50 units we can organize the computer build and the setup (screen wires, etc).",
+    },
 ];
 
 export default tools;
