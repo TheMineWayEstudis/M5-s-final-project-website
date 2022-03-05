@@ -123,7 +123,8 @@ export default function MarketStudy() {
             title: "Mice",
             components: mice,
             explanation: [
-
+                "As the keyboard, we require a good mouse in order to play proporly. The DPIs are one of the most important specs that we must focus on. But we must also think about the navigation (I am refering specially to the back and foward) so it is important to have lateral buttons that allow us to navigate easily throught webpages, directories, etc.",
+                "It would be nice to have a DPI adjuster at the top of the mouse so I can choose whether to be in a very sensitive mode or not (there are in-between modes).",
             ],
         },
         {
