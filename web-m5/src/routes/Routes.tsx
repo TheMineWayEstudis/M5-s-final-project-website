@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import ComputerUsage from "../view/computer/ComputerUsage";
 import MainScreen from "../view/mainScreen/MainScreen";
+import MarketStudy from "../view/marketStudy/MarketStudy";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
 import { Route } from "./Route";
 
@@ -33,4 +34,8 @@ const routes: { route: Route, component: JSX.Element }[] = [
         route: Route.fromPath('/needs'),
         component: <ComputerUsage/>,
     },
+    {
+        route: Route.fromPath('/computer/market-study'),
+        component: <MarketStudy/>,
+    }
 ];
