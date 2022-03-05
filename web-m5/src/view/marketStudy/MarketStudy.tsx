@@ -64,6 +64,8 @@ export default function MarketStudy() {
             components: disks,
             explanation: [
                 "As the massive storage drive we do not need very fast data-transfer bandwithd so we can use any disk available (SSD or HDD). As a requirement I require at least 8TB of storage capacity.",
+                "8TB might sound a lot, but this component will be required as I go on with big development projects (Node.js libraries occupy a lot, this project is 738MB sized and I consider it as a very small one). But as I said, speed is not a priority, so even a HDD should work (but an SDD is better).",
+                "Independelty of the kind of disk, I want to buy three of them so I can make a RAID5.",
             ],
         },
         {
