@@ -7,6 +7,7 @@ import ComputerUsage from "../view/computer/ComputerUsage";
 import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
+import RequiredTools from "../view/tools/RequiredTools";
 import { Route } from "./Route";
 
 export default function Routes() {
@@ -37,5 +38,9 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/computer/market-study'),
         component: <MarketStudy/>,
-    }
+    },
+    {
+        route: Route.fromPath('/computer/tools'),
+        component: <RequiredTools/>,
+    },
 ];
