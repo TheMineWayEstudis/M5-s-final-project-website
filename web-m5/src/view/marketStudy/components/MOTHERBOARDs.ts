@@ -4,7 +4,7 @@ const motherboards: MarketStudyItem[] = [
     {
         name: "ROG Crosshair VII Extreme",
         manufacturer: "Asus",
-        price: 767.2,
+        price: 760.5,
         imageUrl: "https://img.pccomponentes.com/articles/57/572148/1235-asus-rog-crosshair-viii-extreme.jpg",
         purchaseUrl: "https://www.pccomponentes.com/asus-rog-crosshair-viii-extreme",
         choosen: true,

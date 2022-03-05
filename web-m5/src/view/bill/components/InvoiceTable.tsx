@@ -51,22 +51,37 @@ export default function InvoiceTable(props: Props) {
         },
     ];
 
+    function sum(nums: number[]): number {
+        let num = 0;
+        for(const n of nums) num += n;
+        return num;
+    }
+
     return (
         <Row
             gutter={[24,24]}
         >
             <Col span={24}>
                 <Table
+                    sticky
                     pagination={false}
                     dataSource={props.items}
                     columns={columns}
+                    summary={(pageData) => {
+                        const price = sum(pageData.map((p) => p.price));
+
+                        return (
+                            <>
+                                <Table.Summary.Row>
+                                    <Table.Summary.Cell index={0} colSpan={2}></Table.Summary.Cell>
+                                    <Table.Summary.Cell index={1}>Total: {processPrice(Math.floor(price * 100) / 100)}€</Table.Summary.Cell>
+                                    <Table.Summary.Cell index={2}>Total: {processPrice(calculateIva(price, props.iva))}€</Table.Summary.Cell>
+                                </Table.Summary.Row>
+                            </>
+                        );
+                    }}
                 />
             </Col>
-            <Col span={24}>
-                <Card>
-                    
-                </Card>
-            </Col>
         </Row>
-    )
+    );
 }
