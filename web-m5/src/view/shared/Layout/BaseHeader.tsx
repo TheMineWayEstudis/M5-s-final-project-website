@@ -2,7 +2,7 @@ import { Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
 import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
-import { GithubOutlined } from '@ant-design/icons';
+import { DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 
 export default function BaseHeader() {
     return (
@@ -36,7 +36,7 @@ class Header {
 
     private submenu(): JSX.Element {
         return (
-            <Menu.SubMenu title={this.name}>
+            <Menu.SubMenu title={this.name} icon={this.icon}>
                 {this.children!.map((child: Header) => child.render())}
             </Menu.SubMenu>
         );
@@ -62,25 +62,31 @@ const headers: Header[] = [
     new Header({
         route: Route.fromPath('/'),
         name: 'About the project',
+        icon: <NotificationOutlined />,
     }),
     new Header({
         name: 'User needs',
         route: Route.fromPath('/needs'),
+        icon: <UserOutlined />,
     }),
     new Header({
         name: 'Computer',
+        icon: <LaptopOutlined />,
         children: [
             new Header({
                 name: 'Market study',
                 route: Route.fromPath('/computer/market-study'),
+                icon: <ExperimentOutlined />,
             }),
             new Header({
                 name: 'Tools',
                 route: Route.fromPath('/computer/tools'),
+                icon: <KeyOutlined />,
             }),
             new Header({
                 name: 'Budget',
                 route: Route.fromPath('/computer/budget'),
+                icon: <DollarOutlined />,
             }),
         ],
     }),
