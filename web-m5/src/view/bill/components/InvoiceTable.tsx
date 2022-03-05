@@ -1,6 +1,7 @@
-import { Avatar, Card, Col, Row, Space, Table, TableProps } from "antd";
+import { Avatar, Button, Card, Col, Row, Space, Table, TableProps } from "antd";
 import { ColumnsType } from "antd/lib/table";
-import Price, { calculateIva, processPrice } from "../../shared/components/Price";
+import { saveAs } from "file-saver";
+import { calculateIva, processPrice } from "../../shared/components/Price";
 
 const { Column } = Table;
 
@@ -57,6 +58,25 @@ export default function InvoiceTable(props: Props) {
         return num;
     }
 
+    function generateCsv() {
+        const rows: string[][] = [
+            [
+                "Name", "Price (without IVA)", "Price",
+            ],
+            ...props.items.map((i) => [
+                i.name,
+                `${processPrice(Math.floor(i.price * 100) / 100)}€`,
+                `${processPrice(calculateIva(i.price, props.iva))}€`,
+            ]),
+            [],
+            [
+                "Total", `${Math.round(sum(props.items.map((i) => i.price)) * 100) / 100}€`, `${Math.round(sum(props.items.map((i) => calculateIva(i.price, props.iva))) * 100) / 100}€`,
+            ],
+        ];
+
+        return rows.map((r) => r.join(';')).join('\n');
+    }
+
     return (
         <Row
             gutter={[24,24]}
@@ -75,12 +95,15 @@ export default function InvoiceTable(props: Props) {
                                 <Table.Summary.Row>
                                     <Table.Summary.Cell index={0} colSpan={2}></Table.Summary.Cell>
                                     <Table.Summary.Cell index={1}>Total: {processPrice(Math.floor(price * 100) / 100)}€</Table.Summary.Cell>
-                                    <Table.Summary.Cell index={2}>Total: {processPrice(calculateIva(price, props.iva))}€</Table.Summary.Cell>
+                                    <Table.Summary.Cell index={2}>Total: {processPrice(Math.round(calculateIva(price, props.iva) * 100) / 100)}€</Table.Summary.Cell>
                                 </Table.Summary.Row>
                             </>
                         );
                     }}
                 />
+            </Col>
+            <Col span={24}>
+                <Button onClick={() => saveAs(new Blob([generateCsv()]), 'campos-joel-computer-bill.csv')}>Download as CSV</Button>
             </Col>
         </Row>
     );
