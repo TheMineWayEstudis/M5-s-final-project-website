@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/M5-s-final-project-website/static/css/main.910ebb3e.css",
-    "main.js": "/M5-s-final-project-website/static/js/main.fb17386e.js",
+    "main.js": "/M5-s-final-project-website/static/js/main.5e8f3595.js",
     "static/media/assassins_creed.png": "/M5-s-final-project-website/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
     "static/media/Yoshi.jpg": "/M5-s-final-project-website/static/media/Yoshi.969f747d0cf48e255613.jpg",
     "static/media/minecraft.png": "/M5-s-final-project-website/static/media/minecraft.3851d03231e609ddb9e4.png",
@@ -15,10 +15,10 @@
     "static/media/github.jpg": "/M5-s-final-project-website/static/media/github.63a78ed4baa43c498f4b.jpg",
     "index.html": "/M5-s-final-project-website/index.html",
     "main.910ebb3e.css.map": "/M5-s-final-project-website/static/css/main.910ebb3e.css.map",
-    "main.fb17386e.js.map": "/M5-s-final-project-website/static/js/main.fb17386e.js.map"
+    "main.5e8f3595.js.map": "/M5-s-final-project-website/static/js/main.5e8f3595.js.map"
   },
   "entrypoints": [
     "static/css/main.910ebb3e.css",
-    "static/js/main.fb17386e.js"
+    "static/js/main.5e8f3595.js"
   ]
 }
