@@ -78,28 +78,41 @@ export default function MarketStudy() {
             title: "Power supplies",
             components: powerSupplies,
             explanation: [
-                "As the computer is very powerful and power-consuming we require a good power supply so we can power all components proporly.",
+                "As the computer is very powerful and power-consuming we require a good power supply so we can power all components proporly. As I want a clean computer build, the power supply must be fully modular so there are no extra wires in the setup. As I may want to upgrade this computer in a future, the power supply must provide at least 1000W (I know it is a lot, but I don't know what might I be installing later).",
             ],
         },
         {
             title: "Boxes",
             components: boxes,
-            explanation: [],
+            explanation: [
+                "The main requirement is to have an ATX box, but if we can go bigger we should, because we are installing some big components (such as the graphics card), and we want to have some extra space for the air flow.",
+                "Another requirement i the presence of some frontal I/O. I like to have some variety (some USB-A and at least one USB-C).",
+                "As we have a CPU watercooling system, we need a place for its fans to be installed (in the choosen one this space is at the top of the box).",
+            ],
         },
         {
             title: "FireWires",
             components: firewires,
-            explanation: [],
+            explanation: [
+                "There are no requirements for this component (it is just a card that allows us to have some FireWire connectors). The only reason I want this is because in SMX1 Yolanda mentioned them on the M1 subject.",
+            ],
         },
         {
             title: "Screens",
             components: screens,
-            explanation: [],
+            explanation: [
+                "As we have a very high-performant gaming PC we must have a good display (2 of them, because we want to have dual-display). As we will use this computer to play videogames we should have (at least) a 120Hz display. Then, as a personal requirement, I want a 4K display.",
+                "I am used to big displays so at least I want to have a 28\" screen-sized display.",
+                "Finally, it would be nice to have a monitor that includes speakers althought it is not mandatory.",
+            ],
         },
         {
             title: "Cacti 🌵",
             components: cactuses,
-            explanation: [],
+            explanation: [
+                "The cactus is the most important component. There are so many variables we must think about.",
+                "The function of a cactus consists of absorbing gamma and utraviolet rays coming from the screen so they don't harm you a lot. We don't need a very expensive cactus so a basic one should do the trick.",
+            ],
         },
     ];
 
