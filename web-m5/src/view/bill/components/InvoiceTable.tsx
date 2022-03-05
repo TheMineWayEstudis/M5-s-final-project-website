@@ -38,7 +38,7 @@ export default function InvoiceTable(props: Props) {
             ) : (
                 <>{processPrice(value)}€</>
             ),
-            sorter: (a, b) => b.price - a.price,
+            sorter: (a, b) => (b.price * b.units) - (a.price * a.units),
         },
         {
             title: "Price",
@@ -47,7 +47,7 @@ export default function InvoiceTable(props: Props) {
             ) : (
                 <>{processPrice(calculateIva(row.price, props.iva))}€</>
             ),
-            sorter: (a, b) => calculateIva(b.price, props.iva) - calculateIva(a.price, props.iva),
+            sorter: (a, b) => calculateIva(b.price * b.units, props.iva) - calculateIva(a.price * a.units, props.iva),
         },
     ];
 
