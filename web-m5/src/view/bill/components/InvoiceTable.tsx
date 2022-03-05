@@ -23,7 +23,7 @@ export default function InvoiceTable(props: Props) {
         {
             title: "Avatar",
             dataIndex: "imageUrl",
-            render: (value: string) => <Avatar src={value} size={48} />,
+            render: (value: string, row) => <a href={row.purchaseUrl} target="_blank"><Avatar src={value} size={48} /></a>,
             width: 100,
         },
         {
@@ -38,15 +38,16 @@ export default function InvoiceTable(props: Props) {
             ) : (
                 <>{processPrice(value)}€</>
             ),
+            sorter: (a, b) => b.price - a.price,
         },
         {
             title: "Price",
-            dataIndex: 'price',
-            render: (value: number, row) => row.units > 1 ? (
-                <>{processPrice(calculateIva(value, props.iva))}€ x {row.units} = {processPrice(calculateIva(value * row.units, props.iva))}€</>
+            render: (value, row) => row.units > 1 ? (
+                <>{processPrice(calculateIva(row.price, props.iva))}€ x {row.units} = {processPrice(calculateIva(row.price * row.units, props.iva))}€</>
             ) : (
-                <>{processPrice(calculateIva(value, props.iva))}€</>
+                <>{processPrice(calculateIva(row.price, props.iva))}€</>
             ),
+            sorter: (a, b) => calculateIva(b.price, props.iva) - calculateIva(a.price, props.iva),
         },
     ];
 

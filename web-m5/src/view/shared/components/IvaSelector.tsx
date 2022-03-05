@@ -32,5 +32,5 @@ export default function IvaSelector(props: Props) {
                 />
             </Col>
         </Row>
-    )
+    );
 }
