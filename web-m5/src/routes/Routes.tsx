@@ -3,6 +3,7 @@ import {
     Route as RouterRoute,
     BrowserRouter,
 } from "react-router-dom";
+import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
 import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
@@ -42,5 +43,9 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/computer/tools'),
         component: <RequiredTools/>,
+    },
+    {
+        route: Route.fromPath('/computer/bill'),
+        component: <Bill/>,
     },
 ];
