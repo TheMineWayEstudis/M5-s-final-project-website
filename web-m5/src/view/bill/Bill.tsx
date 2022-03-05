@@ -1,6 +1,7 @@
 import { Divider } from "antd";
 import SectionDescription from "../shared/components/SectionDescription";
 import SectionTitle from "../shared/components/SectionTitle";
+import ViewInvoice from "./ViewInvoice";
 
 export default function Bill() {
     return (
@@ -11,6 +12,8 @@ export default function Bill() {
             </SectionDescription>
             
             <Divider/>
+
+            <ViewInvoice/>
         </>
     );
 }
