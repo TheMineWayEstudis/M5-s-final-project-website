@@ -91,6 +91,19 @@ export type ItemSpecs = {
     // CACTUS
     cactusUnits?: number;
 
+    // KEYBOARD
+    keyboardArrangement?: 'QWERTY';
+    hasNumpad?: boolean;
+    volumeController?: boolean;
+    language?: 'Spanish';
+    ownDrivers?: boolean;
+    keyboardType?: 'Mechanical';
+
+    // MOUSE
+    dpi?: number;
+    lateralButtons?: boolean;
+    dpiAdjuster?: boolean;
+
     // OTHER
     fans?: number;
     hasRGB?: boolean;

@@ -89,6 +89,17 @@ export default function MarketStudyElementSpecs(props: Props) {
 
             {specs.cactusUnits && <Item title="Cactus units" value={"x" + specs.cactusUnits.toString()}/>}
 
+            {specs.keyboardArrangement && <Item title="Keyboard arrangement" value={specs.keyboardArrangement}/>}
+            {specs.hasNumpad !== undefined && <Item title="Has numpad" value={specs.hasNumpad ? "Yes" : "No"}/>}
+            {specs.volumeController !== undefined && <Item title="Has volume controller" value={specs.volumeController ? "Yes" : "No"}/>}
+            {specs.language && <Item title="Language" value={specs.language}/>}
+            {specs.ownDrivers !== undefined && <Item title="Own drivers" value={specs.ownDrivers ? "Yes" : "No"}/>}
+            {specs.keyboardType && <Item title="Keyboard type" value={specs.keyboardType}/>}
+
+            {specs.dpi && <Item title="DPIs" value={"x" + specs.dpi.toString()}/>}
+            {specs.dpiAdjuster !== undefined && <Item title="Dpi adjuster" value={specs.dpiAdjuster ? "Yes" : "No"}/>}
+            {specs.lateralButtons !== undefined && <Item title="Lateral buttons" value={specs.lateralButtons ? "Yes" : "No"}/>}
+
             {specs.fans && <Item title="Fans" value={"x" + specs.fans.toString()}/>}
             {specs.powerConsumption !== undefined && <Item title="Power consumption" value={specs.powerConsumption.toString() + "W"}/>}
             {specs.width && <Item title="Width" value={size(specs.width)}/>}

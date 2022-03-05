@@ -7,7 +7,9 @@ import cpuWatercoolings from './components/CPU_WATERCOOLINGs';
 import disks from './components/DISKs';
 import firewires from './components/FIREWIREs';
 import graphics from './components/GRAPHICs';
+import keyboards from './components/KEYBOARDs';
 import m2s from './components/M2s';
+import mice from './components/MICE';
 import motherboards from './components/MOTHERBOARDs';
 import powerSupplies from './components/POWER_SUPPLYs';
 import rams from './components/RAMs';
@@ -107,6 +109,21 @@ export default function MarketStudy() {
                 "As we have a very high-performant gaming PC we must have a good display (2 of them, because we want to have dual-display). As we will use this computer to play videogames we should have (at least) a 120Hz display. Then, as a personal requirement, I want a 4K display.",
                 "I am used to big displays so at least I want to have a 28\" screen-sized display.",
                 "Finally, it would be nice to have a monitor that includes speakers althought it is not mandatory.",
+            ],
+        },
+        {
+            title: "Keyboards",
+            components: keyboards,
+            explanation: [
+                "As every gamer, I require a good keyboard in order to play proporly. The keyboard must be able to be used comfortably and be reliable (specially fast response times).",
+                "It is kind of a requirement that the keyboard has a volume controller wheel (I prefer a dedicated piece of HW than the well-known keybindings) so I can modify the volume without losing focus on my activity.",
+            ],
+        },
+        {
+            title: "Mice",
+            components: mice,
+            explanation: [
+
             ],
         },
         {
