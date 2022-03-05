@@ -6,9 +6,9 @@ import ViewInvoice from "./ViewInvoice";
 export default function Bill() {
     return (
         <>
-            <SectionTitle>Computer bill</SectionTitle>
+            <SectionTitle>Computer budget</SectionTitle>
             <SectionDescription>
-                In this page you can find the detailed bill of the computer (including the required tools)
+                In this page you can find the detailed budget of the computer (including the required tools)
             </SectionDescription>
             
             <Divider/>

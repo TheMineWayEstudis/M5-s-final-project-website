@@ -103,7 +103,7 @@ export default function InvoiceTable(props: Props) {
                 />
             </Col>
             <Col span={24}>
-                <Button onClick={() => saveAs(new Blob([generateCsv()]), 'campos-joel-computer-bill.csv')}>Download as CSV</Button>
+                <Button onClick={() => saveAs(new Blob([generateCsv()]), 'campos-joel-computer-budget.csv')}>Download as CSV</Button>
             </Col>
         </Row>
     );
