@@ -2,7 +2,7 @@ import { Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
 import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
-import { DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { CoffeeOutlined, DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 
 export default function BaseHeader() {
     return (
@@ -87,6 +87,11 @@ const headers: Header[] = [
                 name: 'Budget',
                 route: Route.fromPath('/computer/budget'),
                 icon: <DollarOutlined />,
+            }),
+            new Header({
+                name: 'How to build it',
+                route: Route.fromPath('/computer/how-to-build-it'),
+                icon: <CoffeeOutlined />,
             }),
         ],
     }),
