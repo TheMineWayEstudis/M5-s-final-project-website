@@ -1,3 +1,4 @@
+import SectionDescription from '../shared/components/SectionDescription';
 import SectionTitle from '../shared/components/SectionTitle';
 import boxes from './components/BOXes';
 import cactuses from './components/CACTUSes';
@@ -22,7 +23,7 @@ export default function MarketStudy() {
             components: cpus,
             explanation: [
                 "This compuner needs a lot of CPU power because the main objective of this computer is to be able to run multiple (and high-performant) programs, such as IDEs, videogames, game engines, and more. Those activities require the CPU to be able to multithread several processes within numerous cores in order to keep a good performance.",
-                "That is the main reason why this computer reqires a fast CPU with multiple cores.",
+                "That is the main reason why this computer requires a fast CPU with multiple cores.",
             ],
         },
         {
@@ -121,7 +122,9 @@ export default function MarketStudy() {
     return (
         <>
             <SectionTitle>Market study</SectionTitle>
-
+            <SectionDescription>
+                In this section I will talk about the components that will form the computer and the requirements behind the choosen ones.
+            </SectionDescription>
             {
                 components.map((c) => (
                     <MarketStudyItemGroup
