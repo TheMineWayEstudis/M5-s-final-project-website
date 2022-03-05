@@ -1,10 +1,12 @@
+import { Card, Col, Row } from 'antd';
 import { useState } from 'react';
 import { getComponents } from '../marketStudy/MarketStudy';
+import IvaSelector from '../shared/components/IvaSelector';
 import tools from '../tools/Tools';
 import InvoiceTable, { InvoiceItem } from './components/InvoiceTable';
 
 export default function ViewInvoice() {
-    const [ iva, setIva ] = useState<number>(21);
+    const [iva, setIva] = useState<number>(21);
 
     const items: InvoiceItem[] = [
         ...getComponents().map((c) => {
@@ -22,11 +24,27 @@ export default function ViewInvoice() {
     ];
 
     return (
-        <>
-            <InvoiceTable
-                iva={iva}
-                items={items}
-            />
-        </>
+        <Row gutter={[24, 24]}>
+            <Col span={24}>
+                <Row gutter={[24,24]}>
+                    <Col
+                        xs={24}
+                        md={12}
+                        lg={6}
+                    >
+                        <IvaSelector
+                            iva={iva}
+                            setIva={setIva}
+                        />
+                    </Col>
+                </Row>
+            </Col>
+            <Col span={24}>
+                <InvoiceTable
+                    iva={iva}
+                    items={items}
+                />
+            </Col>
+        </Row>
     );
 }
