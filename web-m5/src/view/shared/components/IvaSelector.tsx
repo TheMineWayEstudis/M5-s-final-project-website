@@ -1,4 +1,4 @@
-import { Button, Col, InputNumber, Row, Slider } from 'antd';
+import { Col, InputNumber, Row, Slider } from 'antd';
 
 type Props = {
     setIva: (value: number) => void;
@@ -30,9 +30,6 @@ export default function IvaSelector(props: Props) {
                     value={props.iva}
                     onChange={props.setIva}
                 />
-            </Col>
-            <Col span={4}>
-                <Button onClick={() => props.setIva(21)}>Reset</Button>            
             </Col>
         </Row>
     )

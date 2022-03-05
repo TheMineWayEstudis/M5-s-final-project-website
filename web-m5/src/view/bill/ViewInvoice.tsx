@@ -32,6 +32,7 @@ export default function ViewInvoice() {
                         md={12}
                         lg={6}
                     >
+                        <p>Select IVA value</p>
                         <IvaSelector
                             iva={iva}
                             setIva={setIva}
