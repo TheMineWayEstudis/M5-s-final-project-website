@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/M5-s-final-project-website/static/css/main.910ebb3e.css",
-    "main.js": "/M5-s-final-project-website/static/js/main.3b594bca.js",
+    "main.js": "/M5-s-final-project-website/static/js/main.fd73c1ea.js",
     "static/media/assassins_creed.png": "/M5-s-final-project-website/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
-    "static/media/Figures.jpg": "/M5-s-final-project-website/static/media/Figures.7d155bd98a219e3a85f8.jpg",
+    "static/media/xmas.png": "/M5-s-final-project-website/static/media/xmas.bbd1582b6b5487d0048f.png",
+    "static/media/UnRobot-4.jpg": "/M5-s-final-project-website/static/media/UnRobot-4.44f0367c342d087acad0.jpg",
     "static/media/minecraft.png": "/M5-s-final-project-website/static/media/minecraft.3851d03231e609ddb9e4.png",
     "static/media/paladins.png": "/M5-s-final-project-website/static/media/paladins.e2d26dae97f3e5aa9952.png",
     "static/media/streamlabs.png": "/M5-s-final-project-website/static/media/streamlabs.eb55a6359a4a537206b6.png",
@@ -13,10 +14,10 @@
     "static/media/vmware.png": "/M5-s-final-project-website/static/media/vmware.8f47a3daafabf35fe739.png",
     "index.html": "/M5-s-final-project-website/index.html",
     "main.910ebb3e.css.map": "/M5-s-final-project-website/static/css/main.910ebb3e.css.map",
-    "main.3b594bca.js.map": "/M5-s-final-project-website/static/js/main.3b594bca.js.map"
+    "main.fd73c1ea.js.map": "/M5-s-final-project-website/static/js/main.fd73c1ea.js.map"
   },
   "entrypoints": [
     "static/css/main.910ebb3e.css",
-    "static/js/main.3b594bca.js"
+    "static/js/main.fd73c1ea.js"
   ]
 }
