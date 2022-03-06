@@ -5,11 +5,13 @@ import HowToBuildItSteps, { StepItem } from './HowToBuildItSteps';
 import motherboard from './steps/motherboard';
 import boxBasics from './steps/boxBasics';
 import setup from './steps/setup';
+import motherboardWiring from './steps/motherboardWiring';
 
 const steps: StepItem[] = [
     setup,
     boxBasics,
     motherboard,
+    motherboardWiring,
 ];
 
 export default function HowToBuildItView() {
