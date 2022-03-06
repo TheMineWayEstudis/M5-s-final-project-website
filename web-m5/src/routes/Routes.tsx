@@ -5,7 +5,6 @@ import {
 } from "react-router-dom";
 import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
-import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
 import Quiz from "../view/quiz/Quiz";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
@@ -31,10 +30,6 @@ export default function Routes() {
 const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/'),
-        component: <MainScreen/>,
-    },
-    {
-        route: Route.fromPath('/needs'),
         component: <ComputerUsage/>,
     },
     {

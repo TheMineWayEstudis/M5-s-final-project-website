@@ -70,13 +70,8 @@ class Header {
 const headers: Header[] = [
     // Main screen header
     new Header({
-        route: Route.fromPath('/'),
-        name: 'About the project',
-        icon: <NotificationOutlined />,
-    }),
-    new Header({
         name: 'User needs',
-        route: Route.fromPath('/needs'),
+        route: Route.fromPath('/'),
         icon: <UserOutlined />,
     }),
     new Header({
