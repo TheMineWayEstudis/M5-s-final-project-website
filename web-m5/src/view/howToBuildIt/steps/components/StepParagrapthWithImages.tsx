@@ -14,7 +14,7 @@ type Props = {
 export default function StepParagrapthWithImages(props: Props) {
     const Image = (props: { src: string }) => {
         return (
-            <AntImage height={200} width={200} src={props.src} />
+            <AntImage src={props.src} />
         );
     }
 
