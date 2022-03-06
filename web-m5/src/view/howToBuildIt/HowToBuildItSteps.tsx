@@ -20,7 +20,7 @@ export default function HowToBuildItSteps(props: Props) {
         <Steps current={props.step} onChange={props.setStep}>
             {
                 props.steps.map((step) => (
-                    <Step title={step.name} description={step.description}/>
+                    <Step title={step.name} description={<p>{step.description}</p>}/>
                 ))
             }
         </Steps>
