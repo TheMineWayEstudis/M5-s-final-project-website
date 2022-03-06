@@ -19,10 +19,12 @@ const setup: StepItem = {
                     <StepItemCard
                         imageUrl="https://m.media-amazon.com/images/I/71g0R2pDGeL._AC_SL1460_.jpg"
                         name="Screwdrivers"
+                        delay={0.25}
                     />
                     <StepItemCard
                         imageUrl="https://m.media-amazon.com/images/I/51pjklTW-6L._AC_SL1002_.jpg"
                         name="Antistatic wristband"
+                        delay={0.5}
                     />
                 </Row>
             </Col>

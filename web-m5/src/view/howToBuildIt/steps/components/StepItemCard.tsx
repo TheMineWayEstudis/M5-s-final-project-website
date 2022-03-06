@@ -1,7 +1,7 @@
 import { Card, Col, Row, Image } from 'antd';
-import StepParagraph from './StepParagraph';
+import Zoom from '../../../../animations/Zoom';
 
-export default function StepItemCard(props: { imageUrl: string, name: string }) {
+export default function StepItemCard(props: { imageUrl: string, name: string, delay: number }) {
     return (
         <Col
             xs={24}
@@ -10,11 +10,13 @@ export default function StepItemCard(props: { imageUrl: string, name: string }) 
             xl={6}
             xxl={4}
         >
-            <Card
-                hoverable
-                cover={<Image src={props.imageUrl} />}
-                title={props.name}
-            />
+            <Zoom delay={props.delay}>
+                <Card
+                    hoverable
+                    cover={<Image src={props.imageUrl} />}
+                    title={props.name}
+                />
+            </Zoom>
         </Col>
     );
 }
