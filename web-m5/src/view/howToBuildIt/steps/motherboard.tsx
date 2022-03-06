@@ -83,6 +83,29 @@ const motherboard: StepItem = {
                     </p>
                 </IP>
             </>
+            <>
+                <SCTitle>Attaching the motherboard</SCTitle>
+                <IP
+                    images={[
+                        {
+                            url: require('./resources/motherboard/ATTACH_1.PNG'),
+                            reference: "Attaching the motherboard",
+                        },
+                        {
+                            url: require('./resources/motherboard/ATTACH_2.PNG'),
+                            reference: "Attaching the fans",
+                        }
+                    ]}
+                >
+                    <p>
+                        Finally, we attach the motherboard to the box (we are also attaching the watercooling system as it is attached to the motherboard).
+                    </p>
+                    <p>
+                        We put the box horizontally and try to fit the motherboard inside of it, matching the attachment holes. Once the motherboard matches its holes, we use the screwdriver to put screws on those holes.
+                        Once we have done that, we also match the watercooling fans to the box (in this box, its place is next to the motherboard. In case of doubt check the image).
+                    </p>
+                </IP>
+            </>
         </>
     ),
 };
