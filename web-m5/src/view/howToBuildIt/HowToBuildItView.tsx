@@ -7,12 +7,14 @@ import boxBasics from './steps/boxBasics';
 import setup from './steps/setup';
 import motherboardWiring from './steps/motherboardWiring';
 import './steps/motherboardWiring.css';
+import disks from './steps/disks';
 
 const steps: StepItem[] = [
     setup,
     boxBasics,
     motherboard,
     motherboardWiring,
+    disks,
 ];
 
 export default function HowToBuildItView() {
