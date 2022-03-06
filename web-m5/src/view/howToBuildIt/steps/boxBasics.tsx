@@ -1,3 +1,4 @@
+import { Alert } from "antd";
 import { StepItem } from "../HowToBuildItSteps";
 import SCTitle from "./components/StepCheckableTitle";
 import P from "./components/StepParagraph";
@@ -53,6 +54,7 @@ const boxBasics: StepItem = {
                     <p>
                         Once we have done this, we should connect the 24-pin ATX to the power supply so we can connect the motherboard later.
                     </p>
+                    <Alert type='info' showIcon message="During the computer build process you will require some power wires. You can connect them as you need them so the installation is cleaner."/>
                 </IP>
             </>
         </>

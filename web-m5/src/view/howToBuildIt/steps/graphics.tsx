@@ -38,7 +38,7 @@ const graphics: StepItem = {
                     <p>
                         Now we can put the graphics card. We fit the card in the slot and press a little bit so it gets inside proporly.
                     </p>
-                    <Alert showIcon type="warning" description={'You must check that the graphics card is installed proporly. If it is partially connected you can break the card, the motherboard or both.'}/>
+                    <Alert showIcon type="warning" message={'You must check that the graphics card is installed proporly. If it is partially connected you can break the card, the motherboard or both.'}/>
                     <p>
                         Once the card is inserted, you screwdrive it so it gets attached to the box.
                     </p>

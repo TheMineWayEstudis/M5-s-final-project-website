@@ -32,7 +32,7 @@ const motherboard: StepItem = {
                     <p>
                         In order to installa each RAM component proporly, we must check that the RAM slot suits the RAM component. Then, once the RAM is in position, you must press the component until in reaches its final position.
                     </p>
-                    <Alert showIcon type="warning" description={'You must check that all RAM is installed proporly. If any is partially out of the slot you can break the RAM, the slot or both.'}/>
+                    <Alert showIcon type="warning" message={'You must check that all RAM is installed proporly. If any is partially out of the slot you can break the RAM, the slot or both.'}/>
                 </IP>
             </>
             <>
