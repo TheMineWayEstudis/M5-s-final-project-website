@@ -1,5 +1,6 @@
-import { Col, Row, Image, Tag } from 'antd';
+import { Col, Row, Image as AntImage, Tag } from 'antd';
 import Ribbon from 'antd/lib/badge/Ribbon';
+import Zoom from '../../../../animations/Zoom';
 import StepParagraph from './StepParagraph';
 
 type Props = {
@@ -11,6 +12,12 @@ type Props = {
 }
 
 export default function StepParagrapthWithImages(props: Props) {
+    const Image = (props: { src: string }) => {
+        return (
+            <AntImage height={200} width={200} src={props.src} />
+        );
+    }
+
     return (
         <Row
             gutter={[24, 24]}
@@ -28,24 +35,26 @@ export default function StepParagrapthWithImages(props: Props) {
                 lg={9}
             >
                 <Row
-                    gutter={[6, 6]}
+                    gutter={[12, 12]}
                 >
                     {
-                        props.images?.map((i) => (
+                        props.images?.map((i, index) => (
                             <Col
                                 xs={24}
                                 md={12}
                                 xxl={8}
                             >
-                                {
-                                    i.reference ? (
-                                        <Ribbon text={`${i.reference}`} placement='start'>
-                                            <Image src={i.url}/>
-                                        </Ribbon>
-                                    ) : (
-                                        <Image src={i.url}/>
-                                    )
-                                }
+                                <Zoom delay={index * 0.25}>
+                                    {
+                                        i.reference ? (
+                                            <Ribbon text={`${i.reference}`} placement='start'>
+                                                <Image src={i.url} />
+                                            </Ribbon>
+                                        ) : (
+                                            <Image src={i.url} />
+                                        )
+                                    }
+                                </Zoom>
                             </Col>
                         ))
                     }
