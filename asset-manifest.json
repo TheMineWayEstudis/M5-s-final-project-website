@@ -1,9 +1,37 @@
 {
   "files": {
-    "main.css": "/M5-s-final-project-website/static/css/main.910ebb3e.css",
-    "main.js": "/M5-s-final-project-website/static/js/main.fd73c1ea.js",
+    "main.css": "/M5-s-final-project-website/static/css/main.9ecc0543.css",
+    "main.js": "/M5-s-final-project-website/static/js/main.852ca934.js",
     "static/media/assassins_creed.png": "/M5-s-final-project-website/static/media/assassins_creed.f292301ae96ee1eb9f47.png",
     "static/media/xmas.png": "/M5-s-final-project-website/static/media/xmas.bbd1582b6b5487d0048f.png",
+    "static/media/G_3.PNG": "/M5-s-final-project-website/static/media/G_3.85e4e5f6c4cbbf13cb97.PNG",
+    "static/media/CPU_install_1.PNG": "/M5-s-final-project-website/static/media/CPU_install_1.bbae61a7155cf514ba20.PNG",
+    "static/media/WIRING_3.PNG": "/M5-s-final-project-website/static/media/WIRING_3.72d502d3fc32d7de2d1a.PNG",
+    "static/media/CPU_install_2.PNG": "/M5-s-final-project-website/static/media/CPU_install_2.bb9b6e252a537fd1108c.PNG",
+    "static/media/ATTACH_1.PNG": "/M5-s-final-project-website/static/media/ATTACH_1.5777fc9b28ac3eebd126.PNG",
+    "static/media/WC_install_2.PNG": "/M5-s-final-project-website/static/media/WC_install_2.e776c24d309f96e51824.PNG",
+    "static/media/G_5.PNG": "/M5-s-final-project-website/static/media/G_5.cc5b964a7ca0ba412f8e.PNG",
+    "static/media/A_1.PNG": "/M5-s-final-project-website/static/media/A_1.1147ea2642c9b1f7a343.PNG",
+    "static/media/A_3.PNG": "/M5-s-final-project-website/static/media/A_3.de84cbccab224daead83.PNG",
+    "static/media/DISKS_2.PNG": "/M5-s-final-project-website/static/media/DISKS_2.fb830fcab84e5025f899.PNG",
+    "static/media/WIRING_1.PNG": "/M5-s-final-project-website/static/media/WIRING_1.772f1be2a094c76fc427.PNG",
+    "static/media/G_4.PNG": "/M5-s-final-project-website/static/media/G_4.fcdd411e6428c6c7dd7d.PNG",
+    "static/media/RAM_install_1.PNG": "/M5-s-final-project-website/static/media/RAM_install_1.da71680b1eeb04eb0737.PNG",
+    "static/media/ps_install_1.PNG": "/M5-s-final-project-website/static/media/ps_install_1.42b1c4280eab5ae9c013.PNG",
+    "static/media/ATTACH_2.PNG": "/M5-s-final-project-website/static/media/ATTACH_2.f5882ad1d5893427e578.PNG",
+    "static/media/G_1.PNG": "/M5-s-final-project-website/static/media/G_1.453e6a1a284c3a771aec.PNG",
+    "static/media/RAM_install_2.PNG": "/M5-s-final-project-website/static/media/RAM_install_2.e6bea1add724373396a7.PNG",
+    "static/media/A_2.PNG": "/M5-s-final-project-website/static/media/A_2.2f6d6fb5c90e96e94cbb.PNG",
+    "static/media/DISKS_1.PNG": "/M5-s-final-project-website/static/media/DISKS_1.ad8946bebe00dc2da544.PNG",
+    "static/media/WIRING_2.PNG": "/M5-s-final-project-website/static/media/WIRING_2.8045b5d314eff07701ae.PNG",
+    "static/media/G_2.PNG": "/M5-s-final-project-website/static/media/G_2.ef185ebf0a95421d3cef.PNG",
+    "static/media/DISKS_4.PNG": "/M5-s-final-project-website/static/media/DISKS_4.ebb471ddd691228e0d90.PNG",
+    "static/media/DISKS_3.PNG": "/M5-s-final-project-website/static/media/DISKS_3.9403c8c5df7e45e0e9aa.PNG",
+    "static/media/WC_install_1.PNG": "/M5-s-final-project-website/static/media/WC_install_1.1796a909b1a8bf1b4f17.PNG",
+    "static/media/A_4.jpg": "/M5-s-final-project-website/static/media/A_4.884c8bff534da8b13b45.jpg",
+    "static/media/dismount_3.PNG": "/M5-s-final-project-website/static/media/dismount_3.9d83438701928536c9f4.PNG",
+    "static/media/dismount_2.PNG": "/M5-s-final-project-website/static/media/dismount_2.2e15884d7bfa4871275a.PNG",
+    "static/media/dismount_1.PNG": "/M5-s-final-project-website/static/media/dismount_1.89a5edfb56a22d80bde9.PNG",
     "static/media/UnRobot-4.jpg": "/M5-s-final-project-website/static/media/UnRobot-4.44f0367c342d087acad0.jpg",
     "static/media/minecraft.png": "/M5-s-final-project-website/static/media/minecraft.3851d03231e609ddb9e4.png",
     "static/media/paladins.png": "/M5-s-final-project-website/static/media/paladins.e2d26dae97f3e5aa9952.png",
@@ -13,11 +41,11 @@
     "static/media/vscode.png": "/M5-s-final-project-website/static/media/vscode.331e5cb33238bdfed344.png",
     "static/media/vmware.png": "/M5-s-final-project-website/static/media/vmware.8f47a3daafabf35fe739.png",
     "index.html": "/M5-s-final-project-website/index.html",
-    "main.910ebb3e.css.map": "/M5-s-final-project-website/static/css/main.910ebb3e.css.map",
-    "main.fd73c1ea.js.map": "/M5-s-final-project-website/static/js/main.fd73c1ea.js.map"
+    "main.9ecc0543.css.map": "/M5-s-final-project-website/static/css/main.9ecc0543.css.map",
+    "main.852ca934.js.map": "/M5-s-final-project-website/static/js/main.852ca934.js.map"
   },
   "entrypoints": [
-    "static/css/main.910ebb3e.css",
-    "static/js/main.fd73c1ea.js"
+    "static/css/main.9ecc0543.css",
+    "static/js/main.852ca934.js"
   ]
 }
