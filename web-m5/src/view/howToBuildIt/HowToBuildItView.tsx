@@ -29,7 +29,7 @@ export default function HowToBuildItView() {
             </Col>
             <Col
                 xs={24}
-                md={20}
+                md={21}
             >
                 <Row gutter={[24, 24]}>
                     <Col span={24}>
