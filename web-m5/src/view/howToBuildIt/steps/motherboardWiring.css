@@ -1,0 +1,12 @@
+table.FrontPannelTable * {
+    border: 1px;
+    border-style: solid;
+}
+
+table.FrontPannelTable td {
+    padding: 10px 10px;
+}
+table.FrontPannelTable td:hover {
+    background-color: #dbdbdb;
+    cursor: pointer;
+}

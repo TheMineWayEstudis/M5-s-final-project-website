@@ -2,7 +2,7 @@ import { Badge, Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
 import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
-import { DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, MailOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { CoffeeOutlined, DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
 import isMessageVisible from '../../quiz/isMessageVisible';
 
 export default function BaseHeader() {
@@ -92,6 +92,11 @@ const headers: Header[] = [
                 name: 'Budget',
                 route: Route.fromPath('/computer/budget'),
                 icon: <DollarOutlined />,
+            }),
+            new Header({
+                name: 'How to build it',
+                route: Route.fromPath('/computer/how-to-build-it'),
+                icon: <CoffeeOutlined />,
             }),
         ],
     }),

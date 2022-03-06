@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
+import HowToBuildIt from "../view/howToBuildIt/HowToBuildIt";
+import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
 import Quiz from "../view/quiz/Quiz";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
@@ -43,6 +45,10 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/computer/budget'),
         component: <Bill/>,
+    },
+    {
+        route: Route.fromPath('/computer/how-to-build-it'),
+        component: <HowToBuildIt/>,
     },
     {
         route: Route.fromPath('/message'),
