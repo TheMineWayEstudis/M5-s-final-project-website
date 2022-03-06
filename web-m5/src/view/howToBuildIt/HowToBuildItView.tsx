@@ -11,6 +11,7 @@ import disks from './steps/disks';
 import graphics from './steps/graphics';
 import checks from './steps/checks';
 import additional from './steps/addtional';
+import startup from './steps/startup';
 
 const steps: StepItem[] = [
     setup,
@@ -21,6 +22,7 @@ const steps: StepItem[] = [
     graphics,
     additional,
     checks,
+    startup,
 ];
 
 export default function HowToBuildItView() {
