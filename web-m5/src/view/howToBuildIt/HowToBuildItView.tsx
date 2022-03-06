@@ -6,6 +6,7 @@ import motherboard from './steps/motherboard';
 import boxBasics from './steps/boxBasics';
 import setup from './steps/setup';
 import motherboardWiring from './steps/motherboardWiring';
+import './steps/motherboardWiring.css';
 
 const steps: StepItem[] = [
     setup,
