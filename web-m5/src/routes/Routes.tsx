@@ -6,7 +6,6 @@ import {
 import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
 import HowToBuildIt from "../view/howToBuildIt/HowToBuildIt";
-import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
 import Quiz from "../view/quiz/Quiz";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
