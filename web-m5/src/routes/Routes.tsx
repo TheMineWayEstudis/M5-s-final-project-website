@@ -7,6 +7,7 @@ import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
 import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
+import Quiz from "../view/quiz/Quiz";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
 import RequiredTools from "../view/tools/RequiredTools";
 import { Route } from "./Route";
@@ -47,5 +48,9 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/computer/budget'),
         component: <Bill/>,
+    },
+    {
+        route: Route.fromPath('/message'),
+        component: <Quiz/>,
     },
 ];
