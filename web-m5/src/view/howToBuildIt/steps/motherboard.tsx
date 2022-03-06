@@ -58,6 +58,31 @@ const motherboard: StepItem = {
                     </p>
                 </IP>
             </>
+            <>
+                <SCTitle>CPU Watercooling installation</SCTitle>
+                <IP
+                    images={[
+                        {
+                            url: require('./resources/motherboard/WC_install_2.PNG'),
+                            reference: "Applying thermal paste",
+                        },
+                        {
+                            url: require('./resources/motherboard/WC_install_1.PNG'),
+                            reference: "Attaching the refrigerator",
+                        }
+                    ]}
+                >
+                    <p>
+                        Once we have the CPU placed on its socket, we should install its watercooling system.
+                    </p>
+                    <p>
+                        We unbox the component. Now we look for the thermal paste. Once we have the thermal paste, we apply a little bit on the top of the CPU (we may want to use a card or similar so we can spread the paste).
+                    </p>
+                    <p>
+                        Once the CPU has some thermal paste applied, we can setup the refrigerator. We place the refrigerator on top of the CPU (matching the piece with the mothermoard attaching holes). Then we use a screwdriver to attach the refrigerator to the motherboard.
+                    </p>
+                </IP>
+            </>
         </>
     ),
 };
