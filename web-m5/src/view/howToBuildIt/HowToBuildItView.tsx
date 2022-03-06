@@ -8,6 +8,7 @@ import setup from './steps/setup';
 import motherboardWiring from './steps/motherboardWiring';
 import './steps/motherboardWiring.css';
 import disks from './steps/disks';
+import graphics from './steps/graphics';
 
 const steps: StepItem[] = [
     setup,
@@ -15,6 +16,7 @@ const steps: StepItem[] = [
     motherboard,
     motherboardWiring,
     disks,
+    graphics,
 ];
 
 export default function HowToBuildItView() {
