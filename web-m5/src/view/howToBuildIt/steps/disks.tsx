@@ -45,7 +45,7 @@ const disks: StepItem = {
                         Now we unbox the SSDs. We locate the back of our computer. There are three "slots" for SSDs on this box. Once we know where are we going to place the disk, we get a SATA and a power disk wire.
                     </p>
                     <p>
-                        First, we connect the SATA wire to the disk. Then we connect the power wire.
+                        First, we connect the SATA wire to the disk and the motherboard (look for an available SATA I/O). Then we connect the power wire.
                     </p>
                     <p>
                         We repeat this process three times (because we have three disks).
