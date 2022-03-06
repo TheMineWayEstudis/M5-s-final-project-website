@@ -1,8 +1,9 @@
-import { Menu } from 'antd';
+import { Badge, Menu } from 'antd';
 import { Header as AntdHeader } from 'antd/lib/layout/layout';
 import { Link } from 'react-router-dom';
 import IRoute, { ExternalRoute, Route } from '../../../routes/Route';
-import { CoffeeOutlined, DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
+import { CoffeeOutlined, DollarOutlined, ExperimentOutlined, GithubOutlined, KeyOutlined, LaptopOutlined, NotificationOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
+import isMessageVisible from '../../quiz/isMessageVisible';
 
 export default function BaseHeader() {
     return (
@@ -12,6 +13,15 @@ export default function BaseHeader() {
             {/* Navigation menu */}
             <Menu theme="dark" mode="horizontal" selectedKeys={[Route.getCurrent().getPath()]}>
                 {headers.map((header: Header) => header.render())}
+                {
+                    isMessageVisible() && (
+                        <Menu.Item
+                            icon={<MailOutlined />}
+                        >
+                            <Link to="/message">Mensaje del pasado</Link>
+                        </Menu.Item>
+                    )
+                }
             </Menu>
         </AntdHeader>
     );
@@ -43,8 +53,8 @@ class Header {
     }
 
     private link(child: JSX.Element, route?: IRoute): JSX.Element {
-        if(route) {
-            if(route.isExternal()) return (<a href={route.getPath()} target={(route as ExternalRoute).newTab ? "_blank" : "_self"}>{child}</a>);
+        if (route) {
+            if (route.isExternal()) return (<a href={route.getPath()} target={(route as ExternalRoute).newTab ? "_blank" : "_self"}>{child}</a>);
             return (<Link to={route.getPath()}>{child}</Link>);
         }
         return <div>{child}</div>;
@@ -60,13 +70,8 @@ class Header {
 const headers: Header[] = [
     // Main screen header
     new Header({
-        route: Route.fromPath('/'),
-        name: 'About the project',
-        icon: <NotificationOutlined />,
-    }),
-    new Header({
         name: 'User needs',
-        route: Route.fromPath('/needs'),
+        route: Route.fromPath('/'),
         icon: <UserOutlined />,
     }),
     new Header({
@@ -98,6 +103,6 @@ const headers: Header[] = [
     new Header({
         name: 'GitHub project',
         route: new ExternalRoute("https://github.com/TheMineWayEstudis/M5-s-final-project-website"),
-        icon: <GithubOutlined/>
+        icon: <GithubOutlined />
     }),
 ];

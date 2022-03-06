@@ -8,6 +8,7 @@ import ComputerUsage from "../view/computer/ComputerUsage";
 import HowToBuildIt from "../view/howToBuildIt/HowToBuildIt";
 import MainScreen from "../view/mainScreen/MainScreen";
 import MarketStudy from "../view/marketStudy/MarketStudy";
+import Quiz from "../view/quiz/Quiz";
 import BaseLayout from "../view/shared/Layout/BaseLayout";
 import RequiredTools from "../view/tools/RequiredTools";
 import { Route } from "./Route";
@@ -31,10 +32,6 @@ export default function Routes() {
 const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/'),
-        component: <MainScreen/>,
-    },
-    {
-        route: Route.fromPath('/needs'),
         component: <ComputerUsage/>,
     },
     {
@@ -52,5 +49,9 @@ const routes: { route: Route, component: JSX.Element }[] = [
     {
         route: Route.fromPath('/computer/how-to-build-it'),
         component: <HowToBuildIt/>,
+    },
+    {
+        route: Route.fromPath('/message'),
+        component: <Quiz/>,
     },
 ];
