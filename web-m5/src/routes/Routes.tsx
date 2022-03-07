@@ -3,6 +3,7 @@ import {
     Route as RouterRoute,
     BrowserRouter,
 } from "react-router-dom";
+import Error404 from "../view/404";
 import Bill from "../view/bill/Bill";
 import ComputerUsage from "../view/computer/ComputerUsage";
 import HowToBuildIt from "../view/howToBuildIt/HowToBuildIt";
@@ -53,4 +54,8 @@ const routes: { route: Route, component: JSX.Element }[] = [
         route: Route.fromPath('/message'),
         component: <Quiz/>,
     },
+    {
+        route: Route.fromPath('*'),
+        component: <Error404/>,
+    }
 ];

@@ -44,6 +44,9 @@ const startup: StepItem = {
                     I do not consider it as part of the computer build, but when the computer is ready you need to install the operative system. You need to use a USB setup because this computer does not support the classic CD/DVD instalaltion.
                 </p>
             </>
+            <p>
+                Now that everything works, you can close the computer box (screwdriving it if necessary).
+            </p>
         </>
     ),
 };

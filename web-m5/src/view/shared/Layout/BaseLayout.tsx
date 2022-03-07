@@ -6,7 +6,7 @@ import './layout.css';
 
 export default function BaseLayout(props: { children: JSX.Element[] | JSX.Element }) {
     return (
-        <Layout className="layout">
+        <Layout className="layout" style={{minHeight: window.innerHeight}}>
             <BaseHeader/>
             <Content style={{ padding: '0 50px' }}>
                 <div className="site-layout-content">
